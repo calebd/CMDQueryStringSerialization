@@ -42,7 +42,7 @@
             key = [key cmd_stringByRemovingEscapes];
             
             value = [pair substringFromIndex:(range.location + range.length)];
-            value = [key cmd_stringByRemovingEscapes];
+            value = [value cmd_stringByRemovingEscapes];
         }
         
         if (!key || !value) {
