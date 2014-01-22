@@ -17,8 +17,8 @@
 @implementation CMDQueryStringSerializationTests
 
 - (void)testOneKeyValuePair {
-    NSDictionary *desiredDictionary = @{ @"key" : @"value" };
     NSString *desiredString = @"key=value";
+    NSDictionary *desiredDictionary = @{ @"key" : @"value" };
     
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
     XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
@@ -29,11 +29,25 @@
 
 
 - (void)testTwoKeyValuePairs {
+    NSString *desiredString = @"key_one=value_one&key_two=value_two";
     NSDictionary *desiredDictionary = @{
         @"key_one" : @"value_one",
         @"key_two" : @"value_two"
     };
-    NSString *desiredString = @"key_one=value_one&key_two=value_two";
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
+
+- (void)testQueryStringWithRepeatingParameterNoBrackets {
+    NSString *desiredString = @"key=one&key=two";
+    NSDictionary *desiredDictionary = @{
+        @"key" : @[ @"one", @"two" ]
+    };
     
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
     XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
