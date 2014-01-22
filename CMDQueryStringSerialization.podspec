@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/calebd/CMDQueryStringSerialization.git', :tag => "v#{s.version}" }
   s.requires_arc = true
   s.platform     = :ios, '6.0'
-  s.source_files = '**/*.{h,m}'
+  s.source_files = 'CMDQueryStringSerialization/**/*.{h,m}'
 end
