@@ -12,6 +12,13 @@
 
 - (NSString *)cmd_stringByAddingEscapes;
 - (NSString *)cmd_stringByRemovingEscapes;
+- (void)cmd_enumeratePairs:(void (^) (NSString *key, NSString *value))block;
+
+@end
+
+@interface NSMutableDictionary (CMDQueryStringSerialization)
+
+- (void)cmd_addObject:(id)object forKey:(NSString *)key;
 
 @end
 
@@ -21,49 +28,10 @@
     if (!string) {
         return nil;
     }
-    
     NSMutableDictionary *result = [NSMutableDictionary new];
-    NSArray *pairs = [string componentsSeparatedByString:@"&"];
-    
-    for (NSString *pair in pairs) {
-        if ([pair length] == 0) {
-            continue;
-        }
-        
-        NSRange range = [pair rangeOfString:@"="];
-        NSString *key;
-        NSString *value;
-        
-        if (range.location == NSNotFound) {
-            key = [pair cmd_stringByRemovingEscapes];
-            value = @"";
-        } else {
-            key = [pair substringToIndex:range.location];
-            key = [key cmd_stringByRemovingEscapes];
-            
-            value = [pair substringFromIndex:(range.location + range.length)];
-            value = [value cmd_stringByRemovingEscapes];
-        }
-        
-        if (!key || !value) {
-            continue;
-        }
-        
-        id existingValueForKey = result[key];
-        
-        if (existingValueForKey) {
-            result[key] = ^{
-                if ([existingValueForKey isKindOfClass:[NSArray class]]) {
-                    return [existingValueForKey arrayByAddingObject:value];
-                } else {
-                    return @[existingValueForKey, value];
-                }
-            }();
-        } else {
-            result[key] = value;
-        }
-    }
-    
+    [string cmd_enumeratePairs:^(NSString *key, NSString *value) {
+        [result cmd_addObject:value forKey:key];
+    }];
     return result;
 }
 
@@ -103,6 +71,44 @@
 
 - (NSString *)cmd_stringByRemovingEscapes {
     return [self stringByRemovingPercentEncoding];
+}
+
+
+- (void)cmd_enumeratePairs:(void (^) (NSString *key, NSString *value))block {
+    NSArray *pairs = [self componentsSeparatedByString:@"&"];
+    [pairs enumerateObjectsUsingBlock:^(NSString *pair, NSUInteger index, BOOL *stop) {
+        NSRange range = [pair rangeOfString:@"="];
+        NSString *key, *value;
+        if (range.location == NSNotFound) {
+            key = [pair cmd_stringByRemovingEscapes];
+            value = @"";
+        } else {
+            key = [pair substringToIndex:range.location];
+            key = [key cmd_stringByRemovingEscapes];
+            value = [pair substringFromIndex:(range.location + range.length)];
+            value = [value cmd_stringByRemovingEscapes];
+        }
+        block(key, value);
+    }];
+}
+
+@end
+
+@implementation NSMutableDictionary (CMDQueryStringSerialization)
+
+- (void)cmd_addObject:(id)object forKey:(NSString *)key {
+    id existingObject = self[key];
+    if (existingObject) {
+        if ([existingObject isKindOfClass:[NSArray class]]) {
+            self[key] = [existingObject arrayByAddingObject:object];
+        }
+        else {
+            self[key] = @[ existingObject, object ];
+        }
+    }
+    else {
+        self[key] = object;
+    }
 }
 
 @end
