@@ -56,4 +56,15 @@
     XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
 
+
+- (void)testQueryStringWithRepeatingParameterWithBracketsToDictionary {
+    NSString *desiredString = @"key[]=one&key[]=two";
+    NSDictionary *desiredDictionary = @{
+        @"key" : @[ @"one", @"two" ]
+    };
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
 @end

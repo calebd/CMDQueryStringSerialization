@@ -82,12 +82,14 @@
         if (range.location == NSNotFound) {
             key = [pair cmd_stringByRemovingEscapes];
             value = @"";
-        } else {
+        }
+        else {
             key = [pair substringToIndex:range.location];
             key = [key cmd_stringByRemovingEscapes];
             value = [pair substringFromIndex:(range.location + range.length)];
             value = [value cmd_stringByRemovingEscapes];
         }
+        key = [key stringByReplacingOccurrencesOfString:@"[]" withString:@""];
         block(key, value);
     }];
 }
