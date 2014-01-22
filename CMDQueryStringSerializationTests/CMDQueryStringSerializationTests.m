@@ -8,15 +8,38 @@
 
 @import XCTest;
 
+#import "CMDQueryStringSerialization.h"
+
 @interface CMDQueryStringSerializationTests : XCTestCase
 
 @end
 
 @implementation CMDQueryStringSerializationTests
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testOneKeyValuePair {
+    NSDictionary *desiredDictionary = @{ @"key" : @"value" };
+    NSString *desiredString = @"key=value";
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
+
+- (void)testTwoKeyValuePairs {
+    NSDictionary *desiredDictionary = @{
+        @"key_one" : @"value_one",
+        @"key_two" : @"value_two"
+    };
+    NSString *desiredString = @"key_one=value_one&key_two=value_two";
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import "CMDQueryStringSerialization.h"
 
-@interface NSString (CMDQeuryStringSerialization)
+@interface NSString (CMDQueryStringSerialization)
 
 - (NSString *)cmd_stringByAddingEscapes;
 - (NSString *)cmd_stringByRemovingEscapes;
@@ -69,7 +69,7 @@
 
 @end
 
-@implementation NSString (CMDQeuryStringSerialization)
+@implementation NSString (CMDQueryStringSerialization)
 
 - (NSString *)cmd_stringByAddingEscapes {
     CFStringRef string = CFURLCreateStringByAddingPercentEscapes(NULL,
