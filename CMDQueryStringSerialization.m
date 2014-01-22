@@ -49,7 +49,19 @@
             continue;
         }
         
-        result[key] = value;
+        id existingValueForKey = result[key];
+        
+        if (existingValueForKey) {
+            result[key] = ^{
+                if ([existingValueForKey isKindOfClass:[NSArray class]]) {
+                    return [existingValueForKey arrayByAddingObject:value];
+                } else {
+                    return @[existingValueForKey, value];
+                }
+            }();
+        } else {
+            result[key] = value;
+        }
     }
     
     return result;
@@ -58,11 +70,20 @@
 
 + (NSString *)queryStringWithDictionary:(NSDictionary *)dictionary {
     NSMutableArray *pairs = [NSMutableArray arrayWithCapacity:[dictionary count]];
-    [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *value, BOOL *stop) {
-        NSString *string = [NSString stringWithFormat:@"%@=%@",
-                            [key cmd_stringByAddingEscapes],
-                            [value cmd_stringByAddingEscapes]];
-        [pairs addObject:string];
+    [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
+        void (^addPair)(NSString *key, NSString *value) = ^(NSString *key, NSString *value) {
+            [pairs addObject:[NSString stringWithFormat:@"%@=%@",
+                              [key cmd_stringByAddingEscapes],
+                              [value cmd_stringByAddingEscapes]]];
+        };
+        
+        if ([value isKindOfClass:[NSArray class]]) {
+            for (NSString *valueFromArray in (NSArray *)value) {
+                addPair(key, valueFromArray);
+            }
+        } else {
+            addPair(key, value);
+        }
     }];
     return [pairs componentsJoinedByString:@"&"];
 }
