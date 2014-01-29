@@ -73,7 +73,7 @@
 
 
 - (NSString *)cmd_stringByRemovingEscapes {
-    return [self stringByRemovingPercentEncoding];
+    return [self stringByRemovingPercentEncoding] ?: @"";
 }
 
 
