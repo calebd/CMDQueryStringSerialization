@@ -81,4 +81,9 @@
     XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
 
+- (void)testNilQueryString {
+    NSDictionary *nilDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:nil];
+    XCTAssertNil(nilDictionary);
+}
+
 @end
