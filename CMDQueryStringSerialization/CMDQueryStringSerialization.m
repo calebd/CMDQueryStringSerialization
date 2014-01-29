@@ -78,6 +78,9 @@
 
 
 - (void)cmd_enumeratePairs:(void (^) (NSString *key, NSString *value))block {
+    if ([self length] == 0) {
+        return;
+    }
     NSArray *pairs = [self componentsSeparatedByString:@"&"];
     [pairs enumerateObjectsUsingBlock:^(NSString *pair, NSUInteger index, BOOL *stop) {
         NSRange range = [pair rangeOfString:@"="];
