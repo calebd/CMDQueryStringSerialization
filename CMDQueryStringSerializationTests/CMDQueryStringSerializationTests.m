@@ -131,4 +131,10 @@
     XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
 
+- (void)testDictionaryWithUnserializableKey {
+    NSDictionary *desiredDictionary = @{ [NSDate date] : @"value" };
+    
+    XCTAssertThrowsSpecificNamed([CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary], NSException, NSInvalidArgumentException);
+}
+
 @end
