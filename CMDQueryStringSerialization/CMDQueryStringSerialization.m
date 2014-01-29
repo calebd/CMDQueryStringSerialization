@@ -37,6 +37,9 @@
 
 
 + (NSString *)queryStringWithDictionary:(NSDictionary *)dictionary {
+    if (!dictionary) {
+        return nil;
+    }
     NSMutableArray *pairs = [NSMutableArray arrayWithCapacity:[dictionary count]];
     [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
         void (^addPair)(NSString *key, NSString *value) = ^(NSString *key, NSString *value) {
