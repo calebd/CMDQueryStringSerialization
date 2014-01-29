@@ -86,4 +86,9 @@
     XCTAssertNil(nilDictionary);
 }
 
+- (void)testNilDictionary {
+    NSString *nilString = [CMDQueryStringSerialization queryStringWithDictionary:nil];
+    XCTAssertNil(nilString);
+}
+
 @end
