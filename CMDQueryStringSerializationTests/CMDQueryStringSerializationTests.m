@@ -124,4 +124,11 @@
     XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
 
+- (void)testQueryStringWithoutEqualCharacter {
+    NSDictionary *desiredDictionary = @{ @"key" : @"" };
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:@"key"];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
 @end
