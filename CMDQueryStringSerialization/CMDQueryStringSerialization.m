@@ -37,6 +37,9 @@
 
 
 + (NSString *)queryStringWithDictionary:(NSDictionary *)dictionary {
+    if (!dictionary) {
+        return nil;
+    }
     NSMutableArray *pairs = [NSMutableArray arrayWithCapacity:[dictionary count]];
     [dictionary enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
         void (^addPair)(NSString *key, NSString *value) = ^(NSString *key, NSString *value) {
@@ -70,11 +73,14 @@
 
 
 - (NSString *)cmd_stringByRemovingEscapes {
-    return [self stringByRemovingPercentEncoding];
+    return [self stringByRemovingPercentEncoding] ?: @"";
 }
 
 
 - (void)cmd_enumeratePairs:(void (^) (NSString *key, NSString *value))block {
+    if ([self length] == 0) {
+        return;
+    }
     NSArray *pairs = [self componentsSeparatedByString:@"&"];
     [pairs enumerateObjectsUsingBlock:^(NSString *pair, NSUInteger index, BOOL *stop) {
         NSRange range = [pair rangeOfString:@"="];
