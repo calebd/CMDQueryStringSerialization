@@ -67,4 +67,18 @@
     XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
 
+- (void)testQueryStringWithEmoji {
+    NSString *desiredString = @"grinning=%F0%9F%98%81&winking=%F0%9F%98%89";
+    NSDictionary *desiredDictionary = @{
+        @"grinning" : @"😁",
+        @"winking" : @"\U0001F609"
+    };
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
 @end
