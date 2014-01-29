@@ -113,4 +113,15 @@
     XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
 
+- (void)testEmptyQueryStringValue {
+    NSString *desiredString = @"key=";
+    NSDictionary *desiredDictionary = @{ @"key" : @"" };
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
 @end
