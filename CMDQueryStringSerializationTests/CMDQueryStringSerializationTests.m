@@ -150,4 +150,29 @@
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
     XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
 }
+
+-(void)testDictionaryWithFloatingPointNumber {
+    NSDictionary *desiredDictionary = @{ @"key": @(13.12)};
+    NSString *desiredString = @"key=13.12";
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
+}
+
+-(void)testDictionaryWithBooleanYES {
+    NSDictionary *desiredDictionary = @{ @"key": @(YES)};
+    NSString *desiredString = @"key=1";
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
+}
+
+-(void)testDictionaryWithBooleanNO {
+    NSDictionary *desiredDictionary = @{ @"key": @(NO)};
+    NSString *desiredString = @"key=0";
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
+}
+
 @end
