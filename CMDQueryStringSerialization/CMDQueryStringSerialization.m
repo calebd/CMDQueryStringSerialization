@@ -22,6 +22,12 @@
 
 @end
 
+@interface NSNumber (CMDQueryStringSerialization)
+
+-(NSString*) cmd_stringByAddingEscapes;
+
+@end
+
 @implementation CMDQueryStringSerialization
 
 + (NSDictionary *)dictionaryWithQueryString:(NSString *)string {
@@ -117,6 +123,15 @@
     else {
         self[key] = object;
     }
+}
+
+@end
+
+@implementation NSNumber (CMDQueryStringSerialization)
+
+-(NSString*) cmd_stringByAddingEscapes {
+    NSString *tmp = [NSString stringWithFormat:@"%@",self];
+    return [tmp cmd_stringByAddingEscapes];
 }
 
 @end

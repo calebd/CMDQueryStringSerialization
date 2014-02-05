@@ -143,4 +143,11 @@
     XCTAssertThrowsSpecificNamed([CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary], NSException, NSInvalidArgumentException);
 }
 
+-(void)testDictionaryWithNumber {
+    NSDictionary *desiredDictionary = @{ @"key": @(13)};
+    NSString *desiredString = @"key=13";
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
+}
 @end
