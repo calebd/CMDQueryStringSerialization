@@ -10,12 +10,6 @@
 #import "CMDQueryStringWriter.h"
 #import "CMDQueryStringReader.h"
 
-#import "CMDKeyValuePairString.h"
-#import "CMDQueryStringCommaSeparatedArrayTransformer.h"
-#import "CMDQueryStringMultipleBracketedKeysArrayTransformer.h"
-#import "CMDQueryStringMultipleKeysArrayTransformer.h"
-#import "NSString+CMDQueryStringSerialization.h"
-
 @implementation CMDQueryStringSerialization
 
 + (NSDictionary *)dictionaryWithQueryString:(NSString *)string {
