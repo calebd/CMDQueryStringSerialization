@@ -1,6 +1,6 @@
 # CMDQueryStringSerialization
 
-Easily convert between dictionaries and query strings in iOS. The API is similar to `NSJSONSerialization`.
+Easily convert between dictionaries and query strings in iOS and OS X. The API is similar to `NSJSONSerialization`.
 
 ## Usage
 
