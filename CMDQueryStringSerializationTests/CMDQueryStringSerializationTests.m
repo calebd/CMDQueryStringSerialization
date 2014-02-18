@@ -63,6 +63,35 @@
         @"key" : @[ @"one", @"two" ]
     };
     
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary options:CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
+- (void)testQueryStringWithCommaDelimitedValue {
+    NSString *desiredString = @"key=one,two";
+    NSDictionary *desiredDictionary = @{
+        @"key" : @[ @"one", @"two" ]
+    };
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary options:CMDQueryStringWritingOptionArrayCommaSeparatedValues];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
+    NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
+- (void)testQueryStringWithCommaDelimitedValueButMultipleKeyArraySerializationType {
+    NSString *desiredString = @"key=one,two";
+    NSDictionary *desiredDictionary = @{
+        @"key" : @[ @"one,two" ]
+    };
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
+    
     NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
     XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
 }
@@ -143,32 +172,32 @@
     XCTAssertThrowsSpecificNamed([CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary], NSException, NSInvalidArgumentException);
 }
 
--(void)testDictionaryWithNumber {
-    NSDictionary *desiredDictionary = @{ @"key": @(13)};
+- (void)testDictionaryWithNumber {
+    NSDictionary *desiredDictionary = @{ @"key": @(13) };
     NSString *desiredString = @"key=13";
     
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
     XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
 }
 
--(void)testDictionaryWithFloatingPointNumber {
-    NSDictionary *desiredDictionary = @{ @"key": @(13.12)};
+- (void)testDictionaryWithFloatingPointNumber {
+    NSDictionary *desiredDictionary = @{ @"key": @(13.12) };
     NSString *desiredString = @"key=13.12";
     
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
     XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
 }
 
--(void)testDictionaryWithBooleanYES {
-    NSDictionary *desiredDictionary = @{ @"key": @(YES)};
+- (void)testDictionaryWithBooleanYES {
+    NSDictionary *desiredDictionary = @{ @"key": @(YES) };
     NSString *desiredString = @"key=1";
     
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
     XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
 }
 
--(void)testDictionaryWithBooleanNO {
-    NSDictionary *desiredDictionary = @{ @"key": @(NO)};
+- (void)testDictionaryWithBooleanNO {
+    NSDictionary *desiredDictionary = @{ @"key": @(NO) };
     NSString *desiredString = @"key=0";
     
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
