@@ -62,7 +62,6 @@
 		3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringWriter.m; sourceTree = "<group>"; };
 		93832CBB18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringMultipleKeysArrayTransformer.h; sourceTree = "<group>"; };
 		93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleKeysArrayTransformer.m; sourceTree = "<group>"; };
-		93832CC118957E74005D5744 /* CMDQueryStringArrayTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringArrayTransformer.h; sourceTree = "<group>"; };
 		93832CC418957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h; sourceTree = "<group>"; };
 		93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m; sourceTree = "<group>"; };
 		93832CC718957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringCommaSeparatedArrayTransformer.h; sourceTree = "<group>"; };
@@ -174,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */,
-				93832CC118957E74005D5744 /* CMDQueryStringArrayTransformer.h */,
 				93832CC718957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.h */,
 				93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */,
 				93832CBB18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.h */,
