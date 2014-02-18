@@ -24,7 +24,7 @@
 
 @interface NSNumber (CMDQueryStringSerialization)
 
--(NSString*) cmd_stringByAddingEscapes;
+-(NSString *)cmd_stringByAddingEscapes;
 
 @end
 
@@ -129,9 +129,8 @@
 
 @implementation NSNumber (CMDQueryStringSerialization)
 
--(NSString*) cmd_stringByAddingEscapes {
-    NSString *tmp = [NSString stringWithFormat:@"%@",self];
-    return [tmp cmd_stringByAddingEscapes];
+-(NSString *)cmd_stringByAddingEscapes {
+    return [[self stringValue] cmd_stringByAddingEscapes];
 }
 
 @end
