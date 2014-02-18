@@ -49,7 +49,7 @@
         @"key" : @[ @"one", @"two" ]
     };
     
-    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary];
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary options:CMDQueryStringWritingOptionArrayRepeatKeys];
     XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
     
     NSDictionary *actualDictionary = [CMDQueryStringSerialization dictionaryWithQueryString:desiredString];
@@ -57,7 +57,7 @@
 }
 
 
-- (void)testQueryStringWithRepeatingParameterWithBracketsToDictionary {
+- (void)testQueryStringWithRepeatingParameterWithBrackets {
     NSString *desiredString = @"key[]=one&key[]=two";
     NSDictionary *desiredDictionary = @{
         @"key" : @[ @"one", @"two" ]

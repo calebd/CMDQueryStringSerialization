@@ -6,25 +6,24 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
-#import "CMDKeyValuePairString.h"
-#import "CMDQueryStringMultipleBracketedKeysArrayTransformer.h"
+#import "CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h"
 #import "NSString+CMDQueryStringSerialization.h"
 
-@implementation CMDQueryStringMultipleBracketedKeysArrayTransformer
+@implementation CMDQueryStringMultipleKeysWithBracketsArrayTransformer
 
 #pragma mark - CMDQueryStringArrayTransformer
 
-+ (NSArray *)keyValuePairStringsFromKey:(NSString *)key values:(NSArray *)values {
++ (NSString *)stringWithKey:(NSString *)key value:(id)value {
     NSMutableArray *mutablePairs = [[NSMutableArray alloc] init];
     
-    [values enumerateObjectsUsingBlock:^(NSString *value, NSUInteger index, BOOL *stop) {
+    [value enumerateObjectsUsingBlock:^(NSString *value, NSUInteger index, BOOL *stop) {
         NSString *escapedKey = [[key cmd_stringByAddingEscapes] stringByAppendingString:@"[]"];
         NSString *escapedValue = [value cmd_stringByAddingEscapes];
-        
-        [mutablePairs addObject:[CMDKeyValuePairString pairStringWithKey:escapedKey value:escapedValue]];
+        NSString *string = [NSString stringWithFormat:@"%@=%@", escapedKey, escapedValue];
+        [mutablePairs addObject:string];
     }];
     
-    return [mutablePairs copy];
+    return [mutablePairs componentsJoinedByString:@"&"];
 }
 
 @end

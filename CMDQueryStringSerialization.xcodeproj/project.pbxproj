@@ -17,7 +17,7 @@
 		3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */; };
 		3BF7142918B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */; };
 		93832CBD18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */; };
-		93832CC618957F4A005D5744 /* CMDQueryStringMultipleBracketedKeysArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CC518957F4A005D5744 /* CMDQueryStringMultipleBracketedKeysArrayTransformer.m */; };
+		93832CC618957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */; };
 		93832CC918957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */; };
 		93832CCC189582EF005D5744 /* CMDKeyValuePairString.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCB189582EF005D5744 /* CMDKeyValuePairString.m */; };
 		93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
@@ -48,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringValueTransformer.h; sourceTree = "<group>"; };
 		3B6EAF9A188F5D78005D2EB4 /* libCMDQueryStringSerialization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCMDQueryStringSerialization.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6EAFA1188F5D78005D2EB4 /* CMDQueryStringSerialization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMDQueryStringSerialization-Prefix.pch"; sourceTree = "<group>"; };
 		3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringSerialization.h; sourceTree = "<group>"; };
@@ -63,8 +64,8 @@
 		93832CBB18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringMultipleKeysArrayTransformer.h; sourceTree = "<group>"; };
 		93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleKeysArrayTransformer.m; sourceTree = "<group>"; };
 		93832CC118957E74005D5744 /* CMDQueryStringArrayTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringArrayTransformer.h; sourceTree = "<group>"; };
-		93832CC418957F4A005D5744 /* CMDQueryStringMultipleBracketedKeysArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringMultipleBracketedKeysArrayTransformer.h; sourceTree = "<group>"; };
-		93832CC518957F4A005D5744 /* CMDQueryStringMultipleBracketedKeysArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleBracketedKeysArrayTransformer.m; sourceTree = "<group>"; };
+		93832CC418957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h; sourceTree = "<group>"; };
+		93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m; sourceTree = "<group>"; };
 		93832CC718957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringCommaSeparatedArrayTransformer.h; sourceTree = "<group>"; };
 		93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringCommaSeparatedArrayTransformer.m; sourceTree = "<group>"; };
 		93832CCA189582EF005D5744 /* CMDKeyValuePairString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDKeyValuePairString.h; sourceTree = "<group>"; };
@@ -177,13 +178,14 @@
 		93832CC218957E89005D5744 /* Arrays */ = {
 			isa = PBXGroup;
 			children = (
+				3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */,
 				93832CC118957E74005D5744 /* CMDQueryStringArrayTransformer.h */,
 				93832CC718957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.h */,
 				93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */,
 				93832CBB18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.h */,
 				93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */,
-				93832CC418957F4A005D5744 /* CMDQueryStringMultipleBracketedKeysArrayTransformer.h */,
-				93832CC518957F4A005D5744 /* CMDQueryStringMultipleBracketedKeysArrayTransformer.m */,
+				93832CC418957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h */,
+				93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */,
 			);
 			name = Arrays;
 			sourceTree = "<group>";
@@ -274,7 +276,7 @@
 				93832CC918957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m in Sources */,
 				3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
 				93832CCC189582EF005D5744 /* CMDKeyValuePairString.m in Sources */,
-				93832CC618957F4A005D5744 /* CMDQueryStringMultipleBracketedKeysArrayTransformer.m in Sources */,
+				93832CC618957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m in Sources */,
 				93832CBD18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m in Sources */,
 				3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,
 			);

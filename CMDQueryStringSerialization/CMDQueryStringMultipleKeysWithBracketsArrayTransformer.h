@@ -1,5 +1,5 @@
 //
-//  CMDQueryStringMultipleKeysArrayTransformer.h
+//  CMDQueryStringMultipleBracketedKeysArrayTransformer.h
 //  CMDQueryStringSerialization
 //
 //  Created by Bryan Irace on 1/26/14.
@@ -8,6 +8,6 @@
 
 #import "CMDQueryStringValueTransformer.h"
 
-@interface CMDQueryStringMultipleKeysArrayTransformer : NSObject <CMDQueryStringValueTransformer>
+@interface CMDQueryStringMultipleKeysWithBracketsArrayTransformer : NSObject <CMDQueryStringValueTransformer>
 
 @end

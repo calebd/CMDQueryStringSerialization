@@ -24,7 +24,7 @@
 
 
 + (NSString *)queryStringWithDictionary:(NSDictionary *)dictionary options:(CMDQueryStringWritingOptions)options {
-    CMDQueryStringWriter *writer = [[CMDQueryStringWriter alloc] initWithDictionary:dictionary];
+    CMDQueryStringWriter *writer = [[CMDQueryStringWriter alloc] initWithDictionary:dictionary options:options];
     return [writer stringValue];
 }
 
@@ -94,12 +94,6 @@
 //
 //#pragma mark - Serialization
 //
-//<<<<<<< HEAD
-//- (NSString *)cmd_stringByRemovingEscapes {
-//    return [self stringByRemovingPercentEncoding] ?: @"";
-//}
-//
-//
 //- (void)cmd_enumeratePairs:(void (^) (NSString *key, NSString *value))block {
 //    if ([self length] == 0) {
 //        return;
@@ -151,34 +145,6 @@
 //    });
 //    
 //    return arraySerializationOptionsToTransformers[@(option)];
-//}
-//
-//@end
-//
-//@implementation NSMutableDictionary (CMDQueryStringSerialization)
-//
-//- (void)cmd_addObject:(id)object forKey:(NSString *)key {
-//    id existingObject = self[key];
-//    
-//    if (existingObject) {
-//        if ([existingObject isKindOfClass:[NSArray class]]) {
-//            self[key] = [existingObject arrayByAddingObject:object];
-//        }
-//        else {
-//            self[key] = @[ existingObject, object ];
-//        }
-//    }
-//    else {
-//        self[key] = object;
-//    }
-//}
-//
-//@end
-//
-//@implementation NSNumber (CMDQueryStringSerialization)
-//
-//-(NSString *)cmd_stringByAddingEscapes {
-//    return [[self stringValue] cmd_stringByAddingEscapes];
 //}
 //
 //@end

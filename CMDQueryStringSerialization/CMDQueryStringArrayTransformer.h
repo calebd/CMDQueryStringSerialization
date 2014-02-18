@@ -7,7 +7,8 @@
 //
 
 /**
- Defines an interface for transforming a key and array of values into an array of query string key/value pairs.
+ Defines an interface for transforming a key and array of values into an array
+ of query string key/value pairs.
  */
 @protocol CMDQueryStringArrayTransformer <NSObject>
 

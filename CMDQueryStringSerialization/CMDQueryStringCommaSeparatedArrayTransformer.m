@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
-#import "CMDKeyValuePairString.h"
 #import "CMDQueryStringCommaSeparatedArrayTransformer.h"
 #import "NSString+CMDQueryStringSerialization.h"
 
@@ -14,15 +13,16 @@
 
 #pragma mark - CMDQueryStringArrayTransformer
 
-+ (NSArray *)keyValuePairStringsFromKey:(NSString *)key values:(NSArray *)values {
-    NSMutableArray *escapedValues = [NSMutableArray arrayWithCapacity:[values count]];
++ (NSString *)stringWithKey:(NSString *)key value:(id)value {
+    NSMutableArray *escapedValues = [NSMutableArray arrayWithCapacity:[value count]];
     
-    [values enumerateObjectsUsingBlock:^(NSString *value, NSUInteger index, BOOL *stop) {
+    [value enumerateObjectsUsingBlock:^(NSString *value, NSUInteger index, BOOL *stop) {
         [escapedValues addObject:[value cmd_stringByAddingEscapes]];
     }];
     
-    return @[[CMDKeyValuePairString pairStringWithKey:[key cmd_stringByAddingEscapes]
-                                                value:[escapedValues componentsJoinedByString:@","]]];
+    key = [key cmd_stringByAddingEscapes];
+    value = [escapedValues componentsJoinedByString:@","];
+    return [NSString stringWithFormat:@"%@=%@", key, value];
 }
 
 @end
