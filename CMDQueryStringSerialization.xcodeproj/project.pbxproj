@@ -92,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B63E2C418B40367002812A5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				93832CCD18958BAF005D5744 /* NSString+CMDQueryStringSerialization.h */,
+				93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		3B6EAF91188F5D78005D2EB4 = {
 			isa = PBXGroup;
 			children = (
@@ -133,9 +142,8 @@
 				93832CCA189582EF005D5744 /* CMDKeyValuePairString.h */,
 				93832CCB189582EF005D5744 /* CMDKeyValuePairString.m */,
 				93832CC218957E89005D5744 /* Arrays */,
+				3B63E2C418B40367002812A5 /* Categories */,
 				3B6EAFA0188F5D78005D2EB4 /* Supporting Files */,
-				93832CCD18958BAF005D5744 /* NSString+CMDQueryStringSerialization.h */,
-				93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */,
 			);
 			path = CMDQueryStringSerialization;
 			sourceTree = "<group>";
