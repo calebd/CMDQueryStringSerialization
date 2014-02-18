@@ -19,7 +19,6 @@
 		93832CBD18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */; };
 		93832CC618957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */; };
 		93832CC918957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */; };
-		93832CCC189582EF005D5744 /* CMDKeyValuePairString.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCB189582EF005D5744 /* CMDKeyValuePairString.m */; };
 		93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
 		93832CD018958D56005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
 /* End PBXBuildFile section */
@@ -68,8 +67,6 @@
 		93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m; sourceTree = "<group>"; };
 		93832CC718957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringCommaSeparatedArrayTransformer.h; sourceTree = "<group>"; };
 		93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringCommaSeparatedArrayTransformer.m; sourceTree = "<group>"; };
-		93832CCA189582EF005D5744 /* CMDKeyValuePairString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDKeyValuePairString.h; sourceTree = "<group>"; };
-		93832CCB189582EF005D5744 /* CMDKeyValuePairString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDKeyValuePairString.m; sourceTree = "<group>"; };
 		93832CCD18958BAF005D5744 /* NSString+CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CMDQueryStringSerialization.h"; sourceTree = "<group>"; };
 		93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,8 +137,6 @@
 				3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */,
 				3BF7142618B3FB3200D596B6 /* CMDQueryStringWriter.h */,
 				3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */,
-				93832CCA189582EF005D5744 /* CMDKeyValuePairString.h */,
-				93832CCB189582EF005D5744 /* CMDKeyValuePairString.m */,
 				93832CC218957E89005D5744 /* Arrays */,
 				3B63E2C418B40367002812A5 /* Categories */,
 				3B6EAFA0188F5D78005D2EB4 /* Supporting Files */,
@@ -275,7 +270,6 @@
 				93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */,
 				93832CC918957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m in Sources */,
 				3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
-				93832CCC189582EF005D5744 /* CMDKeyValuePairString.m in Sources */,
 				93832CC618957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m in Sources */,
 				93832CBD18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m in Sources */,
 				3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,

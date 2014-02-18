@@ -4,7 +4,7 @@ Easily convert between dictionaries and query strings in iOS. The API is similar
 
 ## Usage
 
-```objectivec
+```objc
 NSString *queryString = [CMDQueryStringSerialization queryStringWithDictionary:dictionary];
 ```
 
@@ -14,8 +14,8 @@ NSString *queryString = [CMDQueryStringSerialization queryStringWithDictionary:d
 * `key[]=value1&key[]=value2`
 * `key=value1,value2`
 
-The `CMDQueryStringArraySerializationOption` enum contains options that map to each of these formats, with `CMDQueryStringArraySerializationOptionMultipleKeys` being the default if no option is passed.
+`CMDQueryStringWritingOptions` contains options that map to each of these formats, with `CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets` being the default if no option is passed.
 
 ## License
 
-MIT
+`CMDQueryStringSerialization` is released under the MIT License.
