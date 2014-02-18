@@ -16,6 +16,9 @@
 #pragma mark - Public
 
 - (instancetype)initWithString:(NSString *)string {
+    if (!string) {
+        return nil;
+    }
     if ((self = [super init])) {
         _dictionary = [NSMutableDictionary new];
         [[self class] enumeratePairsInString:string block:^(NSString *key, NSString *value) {
