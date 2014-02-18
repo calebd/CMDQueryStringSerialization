@@ -36,12 +36,9 @@
         else if ([value isKindOfClass:[NSArray class]]) {
             value = [value description];
         }
-//        else {
-//            @throw NSInvalidArgumentException;
-//        }
-//        if (![key isKindOfClass:[NSString class]]) {
-//            @throw NSInvalidArgumentException;
-//        }
+        else {
+            [NSException raise:NSInvalidArgumentException format:nil];
+        }
         NSString *pair = [NSString stringWithFormat:@"%@=%@", [key cmd_stringByAddingEscapes], value];
         [pairs addObject:pair];
     }];
