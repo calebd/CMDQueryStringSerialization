@@ -55,6 +55,7 @@
         
         if (range.location == NSNotFound) {
             key = pair;
+            value = @"";
         }
         else {
             key = [pair substringToIndex:range.location];
