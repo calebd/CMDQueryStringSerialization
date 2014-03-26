@@ -53,7 +53,7 @@
                               [key cmd_stringByAddingEscapes],
                               [value cmd_stringByAddingEscapes]]];
         };
-        
+
         if ([value isKindOfClass:[NSArray class]]) {
             for (NSString *valueFromArray in (NSArray *)value) {
                 addPair(key, valueFromArray);
@@ -79,9 +79,8 @@
 
 
 - (NSString *)cmd_stringByRemovingEscapes {
-    return [self stringByRemovingPercentEncoding] ?: @"";
+    return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] ?: @"";
 }
-
 
 - (void)cmd_enumeratePairs:(void (^) (NSString *key, NSString *value))block {
     if ([self length] == 0) {
