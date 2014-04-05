@@ -12,13 +12,20 @@
 		3B6EAFB2188F5D79005D2EB4 /* libCMDQueryStringSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6EAF9A188F5D78005D2EB4 /* libCMDQueryStringSerialization.a */; };
 		3B6EAFB8188F5D79005D2EB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B6EAFB6188F5D79005D2EB4 /* InfoPlist.strings */; };
 		3B6EAFBA188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EAFB9188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m */; };
+		3BF21A4318F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */; };
+		3BF21A4418F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */; };
+		3BF21A4718F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */; };
+		3BF21A4818F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */; };
+		3BF21A4B18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */; };
+		3BF21A4C18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */; };
+		3BF21A4F18F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */; };
+		3BF21A5018F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */; };
+		3BF21A5218F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */; };
+		3BF21A5318F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */; };
 		3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */; };
 		3BF7142518B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */; };
 		3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */; };
 		3BF7142918B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */; };
-		93832CBD18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */; };
-		93832CC618957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */; };
-		93832CC918957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */; };
 		93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
 		93832CD018958D56005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
 /* End PBXBuildFile section */
@@ -56,16 +63,19 @@
 		3B6EAFB5188F5D79005D2EB4 /* CMDQueryStringSerializationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMDQueryStringSerializationTests-Info.plist"; sourceTree = "<group>"; };
 		3B6EAFB7188F5D79005D2EB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B6EAFB9188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringSerializationTests.m; sourceTree = "<group>"; };
+		3BF21A4118F0C06D0029100A /* CMDQueryStringArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringArrayTransformer.h; sourceTree = "<group>"; };
+		3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringArrayTransformer.m; sourceTree = "<group>"; };
+		3BF21A4518F0C1840029100A /* CMDQueryStringDateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringDateTransformer.h; sourceTree = "<group>"; };
+		3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringDateTransformer.m; sourceTree = "<group>"; };
+		3BF21A4918F0C4F90029100A /* CMDQueryStringNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringNumberTransformer.h; sourceTree = "<group>"; };
+		3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringNumberTransformer.m; sourceTree = "<group>"; };
+		3BF21A4D18F0C5040029100A /* CMDQueryStringStringTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringStringTransformer.h; sourceTree = "<group>"; };
+		3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringStringTransformer.m; sourceTree = "<group>"; };
+		3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringValueTransformer.m; sourceTree = "<group>"; };
 		3BF7142218B3FAD300D596B6 /* CMDQueryStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringReader.h; sourceTree = "<group>"; };
 		3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringReader.m; sourceTree = "<group>"; };
 		3BF7142618B3FB3200D596B6 /* CMDQueryStringWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringWriter.h; sourceTree = "<group>"; };
 		3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringWriter.m; sourceTree = "<group>"; };
-		93832CBB18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringMultipleKeysArrayTransformer.h; sourceTree = "<group>"; };
-		93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleKeysArrayTransformer.m; sourceTree = "<group>"; };
-		93832CC418957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h; sourceTree = "<group>"; };
-		93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m; sourceTree = "<group>"; };
-		93832CC718957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringCommaSeparatedArrayTransformer.h; sourceTree = "<group>"; };
-		93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringCommaSeparatedArrayTransformer.m; sourceTree = "<group>"; };
 		93832CCD18958BAF005D5744 /* NSString+CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CMDQueryStringSerialization.h"; sourceTree = "<group>"; };
 		93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +146,7 @@
 				3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */,
 				3BF7142618B3FB3200D596B6 /* CMDQueryStringWriter.h */,
 				3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */,
-				93832CC218957E89005D5744 /* Arrays */,
+				93832CC218957E89005D5744 /* Transformers */,
 				3B63E2C418B40367002812A5 /* Categories */,
 				3B6EAFA0188F5D78005D2EB4 /* Supporting Files */,
 			);
@@ -169,18 +179,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		93832CC218957E89005D5744 /* Arrays */ = {
+		93832CC218957E89005D5744 /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
 				3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */,
-				93832CC718957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.h */,
-				93832CC818957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m */,
-				93832CBB18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.h */,
-				93832CBC18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m */,
-				93832CC418957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.h */,
-				93832CC518957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m */,
+				3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */,
+				3BF21A4118F0C06D0029100A /* CMDQueryStringArrayTransformer.h */,
+				3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */,
+				3BF21A4518F0C1840029100A /* CMDQueryStringDateTransformer.h */,
+				3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */,
+				3BF21A4918F0C4F90029100A /* CMDQueryStringNumberTransformer.h */,
+				3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */,
+				3BF21A4D18F0C5040029100A /* CMDQueryStringStringTransformer.h */,
+				3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */,
 			);
-			name = Arrays;
+			name = Transformers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,12 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF21A4718F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */,
 				3B6EAFA5188F5D78005D2EB4 /* CMDQueryStringSerialization.m in Sources */,
 				93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */,
-				93832CC918957F8F005D5744 /* CMDQueryStringCommaSeparatedArrayTransformer.m in Sources */,
+				3BF21A4B18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */,
+				3BF21A5218F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */,
 				3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
-				93832CC618957F4A005D5744 /* CMDQueryStringMultipleKeysWithBracketsArrayTransformer.m in Sources */,
-				93832CBD18957BCD005D5744 /* CMDQueryStringMultipleKeysArrayTransformer.m in Sources */,
+				3BF21A4F18F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */,
+				3BF21A4318F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */,
 				3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF21A4818F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */,
 				3B6EAFBA188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m in Sources */,
 				93832CD018958D56005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */,
+				3BF21A4C18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */,
+				3BF21A5318F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */,
+				3BF21A4418F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */,
+				3BF21A5018F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */,
 				3BF7142518B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
 				3BF7142918B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,
 			);
@@ -311,7 +331,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -349,7 +368,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -404,7 +422,6 @@
 		3B6EAFC1188F5D79005D2EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -425,7 +442,6 @@
 		3B6EAFC2188F5D79005D2EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

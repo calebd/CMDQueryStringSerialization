@@ -163,9 +163,21 @@
 }
 
 - (void)testDictionaryWithUnserializableValue {
-    NSDictionary *desiredDictionary = @{ @"key" : [NSDate date] };
+    NSDictionary *desiredDictionary = @{ @"key" : [NSObject new] };
     
     XCTAssertThrowsSpecificNamed([CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary], NSException, NSInvalidArgumentException);
+}
+
+
+- (void)testDictionaryWithDateAsUnixTimestamp {
+    NSDate *inputDate = [NSDate date];
+    NSDictionary *inputDictionary = @{
+        @"date" : inputDate
+    };
+    NSString *desiredString = [NSString stringWithFormat:@"date=%@", @((NSInteger)[inputDate timeIntervalSince1970])];
+    
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:inputDictionary];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query string is incorrect.");
 }
 
 
