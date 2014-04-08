@@ -20,9 +20,9 @@
 
 + (NSString *)queryStringWithDictionary:(NSDictionary *)dictionary {
     CMDQueryStringWritingOptions options = (
-        CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets |
-        CMDQueryStringWritingOptionDateAsUnixTimestamp
-    );
+                                            CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets |
+                                            CMDQueryStringWritingOptionDateAsUnixTimestamp
+                                            );
     return [self queryStringWithDictionary:dictionary options:options];
 }
 

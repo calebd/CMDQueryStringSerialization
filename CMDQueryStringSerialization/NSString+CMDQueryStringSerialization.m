@@ -20,7 +20,7 @@
 
 
 - (NSString *)cmd_stringByRemovingEscapes {
-    return [self stringByRemovingPercentEncoding];
+    return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
 @end
