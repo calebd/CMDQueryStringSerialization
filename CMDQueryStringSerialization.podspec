@@ -7,6 +7,10 @@ Pod::Spec.new do |s|
   s.author       = { 'Caleb Davenport' => 'calebmdavenport@gmail.com' }
   s.source       = { :git => 'https://github.com/calebd/CMDQueryStringSerialization.git', :tag => "v#{s.version}" }
   s.requires_arc = true
-  s.platform     = :ios, '6.0'
+
+  s.ios.deployment_target = '6.0'
+  s.osx.deployment_target = '10.8'
+
   s.source_files = 'CMDQueryStringSerialization/**/*.{h,m}'
+  s.public_header_files = 'CMDQueryStringSerialization/CMDQueryStringSerialization.h'
 end

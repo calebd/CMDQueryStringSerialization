@@ -1,0 +1,4 @@
+language: objective-c
+script:
+  - xctool -project CMDQueryStringSerialization.xcodeproj -scheme CMDQueryStringSerialization -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -project CMDQueryStringSerialization.xcodeproj -scheme CMDQueryStringSerialization -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
