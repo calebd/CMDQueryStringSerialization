@@ -13,9 +13,7 @@
 #pragma mark - CMDQueryStringValueTransformer
 
 + (NSString *)stringWithKey:(NSString *)key value:(id)value options:(CMDQueryStringWritingOptions)options {
-    NSString *escapedKey = [key cmd_stringByAddingEscapes];
-    NSString *escapedValue = [[value stringValue] cmd_stringByAddingEscapes];
-    return [NSString stringWithFormat:@"%@=%@", escapedKey, escapedValue];
+    return [NSString stringWithFormat:@"%@=%@", key, [value stringValue]];
 }
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "CMDQueryStringSerialization.h"
-#import "NSString+CMDQueryStringSerialization.h"
 
 @protocol CMDQueryStringValueTransformer <NSObject>
 @required

@@ -12,18 +12,15 @@
 #import "CMDQueryStringValueTransformer.h"
 
 @implementation CMDQueryStringWriter {
-    NSMutableDictionary *_dictionary;
+    NSDictionary *_dictionary;
     CMDQueryStringWritingOptions _options;
 }
 
 #pragma mark - Public
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary options:(CMDQueryStringWritingOptions)options {
-    if (!dictionary) {
-        return nil;
-    }
     if ((self = [super init])) {
-        _dictionary = [dictionary mutableCopy];
+        _dictionary = [dictionary copy];
         _options = options;
     }
     return self;
@@ -31,6 +28,10 @@
 
 
 - (NSString *)stringValue {
+    if (!_dictionary) {
+        return nil;
+    }
+    
     NSMutableArray *pairs = [NSMutableArray new];
     [_dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
         NSString *string = [self stringWithKey:key value:value];

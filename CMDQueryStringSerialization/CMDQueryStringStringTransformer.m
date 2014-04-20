@@ -7,15 +7,14 @@
 //
 
 #import "CMDQueryStringStringTransformer.h"
+#import "NSString+CMDQueryStringSerialization.h"
 
 @implementation CMDQueryStringStringTransformer
 
 #pragma mark - CMDQueryStringValueTransformer
 
 + (NSString *)stringWithKey:(NSString *)key value:(id)value options:(CMDQueryStringWritingOptions)options {
-    return [NSString stringWithFormat:@"%@=%@",
-            [key cmd_stringByAddingEscapes],
-            [value cmd_stringByAddingEscapes]];
+    return [NSString stringWithFormat:@"%@=%@", key, [value cmd_stringByAddingEscapes]];
 }
 
 @end
