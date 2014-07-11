@@ -12,7 +12,7 @@
 #import "CMDQueryStringDateTransformer.h"
 #import "CMDQueryStringArrayTransformer.h"
 
-@import ObjectiveC.runtime;
+#import <objc/runtime.h>
 
 @implementation CMDQueryStringValueTransformer
 
