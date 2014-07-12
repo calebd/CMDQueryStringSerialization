@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B1DB7521970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DB7511970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m */; };
 		3B6EAFA3188F5D78005D2EB4 /* CMDQueryStringSerialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */; };
 		3B6EAFA5188F5D78005D2EB4 /* CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EAFA4188F5D78005D2EB4 /* CMDQueryStringSerialization.m */; };
 		3B6EAFB2188F5D79005D2EB4 /* libCMDQueryStringSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6EAF9A188F5D78005D2EB4 /* libCMDQueryStringSerialization.a */; };
@@ -285,7 +284,6 @@
 				3B6EAFA5188F5D78005D2EB4 /* CMDQueryStringSerialization.m in Sources */,
 				93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */,
 				3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
-				3B1DB7521970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m in Sources */,
 				3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
