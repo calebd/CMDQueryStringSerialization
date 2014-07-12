@@ -2,19 +2,15 @@
 //  CMDQueryStringValueTransformer.h
 //  CMDQueryStringSerialization
 //
-//  Created by Caleb Davenport on 2/18/14.
+//  Created by Caleb Davenport on 7/11/14.
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
-#import "CMDQueryStringSerialization.h"
+@import Foundation;
+#import "CMDQueryStringWritingOptions.h"
 
-@protocol CMDQueryStringValueTransformer <NSObject>
-@required
+@interface NSObject (CMDQueryStringValueTransformer)
 
-+ (NSString *)stringWithKey:(NSString *)key value:(id)value options:(CMDQueryStringWritingOptions)options;
-
-@end
-
-@interface CMDQueryStringValueTransformer : NSObject <CMDQueryStringValueTransformer>
+- (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options;
 
 @end

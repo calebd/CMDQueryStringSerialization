@@ -162,12 +162,6 @@
     XCTAssertThrowsSpecificNamed([CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary], NSException, NSInvalidArgumentException);
 }
 
-- (void)testDictionaryWithUnserializableValue {
-    NSDictionary *desiredDictionary = @{ @"key" : [NSObject new] };
-    
-    XCTAssertThrowsSpecificNamed([CMDQueryStringSerialization queryStringWithDictionary:desiredDictionary], NSException, NSInvalidArgumentException);
-}
-
 
 - (void)testDictionaryWithDateAsUnixTimestamp {
     NSDate *inputDate = [NSDate date];

@@ -7,8 +7,6 @@
 //
 
 #import "CMDQueryStringWriter.h"
-#import "NSString+CMDQueryStringSerialization.h"
-#import "CMDQueryStringSerialization.h"
 #import "CMDQueryStringValueTransformer.h"
 
 @implementation CMDQueryStringWriter {
@@ -28,31 +26,7 @@
 
 
 - (NSString *)stringValue {
-    if (!_dictionary) {
-        return nil;
-    }
-    
-    NSMutableArray *pairs = [NSMutableArray new];
-    [_dictionary enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL *stop) {
-        NSString *string = [self stringWithKey:key value:value];
-        [pairs addObject:string];
-    }];
-    return [pairs componentsJoinedByString:@"&"];
-}
-
-
-#pragma mark - Private
-
-- (NSString *)stringWithKey:(id)key value:(id)value {
-    
-    // Be sure the key is a string
-    if (![key isKindOfClass:[NSString class]]) {
-        [NSException raise:NSInvalidArgumentException format:nil];
-    }
-    key = [key cmd_stringByAddingEscapes];
-    
-    // Trasform the value and return
-    return [CMDQueryStringValueTransformer stringWithKey:key value:value options:_options];
+    return [_dictionary CMDQueryStringValueTransformer_queryStringWithKey:nil options:_options];
 }
 
 @end

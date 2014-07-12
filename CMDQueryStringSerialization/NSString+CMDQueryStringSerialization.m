@@ -11,10 +11,12 @@
 @implementation NSString (CMDQueryStringSerialization)
 
 - (NSString *)cmd_stringByAddingEscapes {
-    CFStringRef string = CFURLCreateStringByAddingPercentEscapes(NULL,
-                                                                 (CFStringRef)self,
-                                                                 NULL,
-                                                                 CFSTR("!*'();:@&=+$,/?%#[]"), kCFStringEncodingUTF8);
+    CFStringRef string = CFURLCreateStringByAddingPercentEscapes(
+        NULL,
+        (CFStringRef)self,
+        NULL,
+        CFSTR("!*'();:@&=+$,/?%#[]"), kCFStringEncodingUTF8
+    );
     return (NSString *)CFBridgingRelease(string);
 }
 

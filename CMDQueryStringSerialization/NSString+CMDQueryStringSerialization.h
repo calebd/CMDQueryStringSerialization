@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
+@import Foundation;
+
 @interface NSString (CMDQueryStringSerialization)
 
 - (NSString *)cmd_stringByAddingEscapes;

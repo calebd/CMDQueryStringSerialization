@@ -1,48 +1,78 @@
 //
-//  CMDQueryStringValueTransformer.h
+//  CMDQueryStringValueTransformer.m
 //  CMDQueryStringSerialization
 //
-//  Created by Caleb Davenport on 2/18/14.
+//  Created by Caleb Davenport on 7/11/14.
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
 #import "CMDQueryStringValueTransformer.h"
-#import "CMDQueryStringStringTransformer.h"
-#import "CMDQueryStringNumberTransformer.h"
-#import "CMDQueryStringDateTransformer.h"
-#import "CMDQueryStringArrayTransformer.h"
+#import "NSString+CMDQueryStringSerialization.h"
 
-@import ObjectiveC.runtime;
+@implementation NSObject (CMDQueryStringValueTransformer)
 
-@implementation CMDQueryStringValueTransformer
+- (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
+    NSString *escapedKey = [key cmd_stringByAddingEscapes];
+    NSString *escapedValue = [[self description] cmd_stringByAddingEscapes];
+    return [NSString stringWithFormat:@"%@=%@", escapedKey, escapedValue];
+}
 
-#pragma mark - CMDQueryStringValueTransformer
+@end
 
-+ (NSString *)stringWithKey:(NSString *)key value:(id)value options:(CMDQueryStringWritingOptions)options {
-    Class transformerClass = Nil;
-    
-    if ([value isKindOfClass:[NSString class]]) {
-        transformerClass = [CMDQueryStringStringTransformer class];
+@implementation NSArray (CMDQueryStringValueTransformer)
+
+- (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
+    NSString *escapedKey = [key cmd_stringByAddingEscapes];
+    NSArray *escapedValues = [self valueForKey:@"cmd_stringByAddingEscapes"];
+    if ((options & CMDQueryStringWritingOptionArrayCommaSeparatedValues) == CMDQueryStringWritingOptionArrayCommaSeparatedValues) {
+        return [NSString stringWithFormat:@"%@=%@", escapedKey, [escapedValues componentsJoinedByString:@","]];
     }
-    else if ([value isKindOfClass:[NSNumber class]]) {
-        transformerClass = [CMDQueryStringNumberTransformer class];
+    else if ((options & CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets) == CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets) {
+        NSMutableArray *pairs = [[NSMutableArray alloc] init];
+        [escapedValues enumerateObjectsUsingBlock:^(id object, NSUInteger index, BOOL *stop) {
+            NSString *pair = [NSString stringWithFormat:@"%@[]=%@", escapedKey, object];
+            [pairs addObject:pair];
+        }];
+        return [pairs componentsJoinedByString:@"&"];
     }
-    else if ([value isKindOfClass:[NSArray class]]) {
-        transformerClass = [CMDQueryStringArrayTransformer class];
+    else {
+        NSMutableArray *pairs = [[NSMutableArray alloc] init];
+        [escapedValues enumerateObjectsUsingBlock:^(id object, NSUInteger index, BOOL *stop) {
+            NSString *pair = [NSString stringWithFormat:@"%@=%@", escapedKey, object];
+            [pairs addObject:pair];
+        }];
+        return [pairs componentsJoinedByString:@"&"];
     }
-    else if ([value isKindOfClass:[NSDate class]]) {
-        transformerClass = [CMDQueryStringDateTransformer class];
-    }
-    
-    if (!transformerClass) {
-        [NSException raise:NSInvalidArgumentException format:@"No class is configured to handle %@ objects.", [value class]];
-    }
-    NSParameterAssert(class_conformsToProtocol(transformerClass, @protocol(CMDQueryStringValueTransformer)));
-    id returnValue = [transformerClass stringWithKey:key value:value options:options];
-    if (!returnValue) {
-        [NSException raise:NSInvalidArgumentException format:nil];
-    }
-    return returnValue;
+}
+
+@end
+
+@implementation NSDictionary (CMDQueryStringValueTransformer)
+
+- (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)namespace options:(CMDQueryStringWritingOptions)options {
+    NSMutableArray *pairs = [[NSMutableArray alloc] init];
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id object, BOOL *stop) {
+        
+        // Ensure that key is a string
+        if (![key isKindOfClass:[NSString class]]) {
+            [NSException raise:NSInvalidArgumentException format:@"%@ is not a valid query string key.", key];
+        }
+        
+        // Convert values
+        NSString *pair = [object CMDQueryStringValueTransformer_queryStringWithKey:key options:options];
+        [pairs addObject:pair];
+    }];
+    [pairs sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    return [pairs componentsJoinedByString:@"&"];
+}
+
+@end
+
+@implementation NSDate (CMDQueryStringValueTransformer)
+
+- (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
+    NSNumber *number = @((NSInteger)[self timeIntervalSince1970]);
+    return [number CMDQueryStringValueTransformer_queryStringWithKey:key options:options];
 }
 
 @end

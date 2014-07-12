@@ -7,30 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1DB7521970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DB7511970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m */; };
 		3B6EAFA3188F5D78005D2EB4 /* CMDQueryStringSerialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */; };
 		3B6EAFA5188F5D78005D2EB4 /* CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EAFA4188F5D78005D2EB4 /* CMDQueryStringSerialization.m */; };
 		3B6EAFB2188F5D79005D2EB4 /* libCMDQueryStringSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6EAF9A188F5D78005D2EB4 /* libCMDQueryStringSerialization.a */; };
 		3B6EAFB8188F5D79005D2EB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B6EAFB6188F5D79005D2EB4 /* InfoPlist.strings */; };
 		3B6EAFBA188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EAFB9188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m */; };
-		3BF21A4318F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */; };
-		3BF21A4418F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */; };
-		3BF21A4718F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */; };
-		3BF21A4818F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */; };
-		3BF21A4B18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */; };
-		3BF21A4C18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */; };
-		3BF21A4F18F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */; };
-		3BF21A5018F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */; };
-		3BF21A5218F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */; };
-		3BF21A5318F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */; };
 		3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */; };
-		3BF7142518B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */; };
 		3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */; };
-		3BF7142918B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */; };
 		93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
-		93832CD018958D56005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3B1DB7541970EA430076F82B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6EAF92188F5D78005D2EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6EAF99188F5D78005D2EB4;
+			remoteInfo = CMDQueryStringSerialization;
+		};
 		3B6EAFB0188F5D79005D2EB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B6EAF92188F5D78005D2EB4 /* Project object */;
@@ -54,9 +49,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B1DB7501970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CMDQueryStringValueTransformer.h"; sourceTree = "<group>"; };
+		3B1DB7511970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CMDQueryStringValueTransformer.m"; sourceTree = "<group>"; };
+		3B1DB7531970E5A40076F82B /* CMDQueryStringWritingOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringWritingOptions.h; sourceTree = "<group>"; };
 		3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringValueTransformer.h; sourceTree = "<group>"; };
 		3B6EAF9A188F5D78005D2EB4 /* libCMDQueryStringSerialization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCMDQueryStringSerialization.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6EAFA1188F5D78005D2EB4 /* CMDQueryStringSerialization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMDQueryStringSerialization-Prefix.pch"; sourceTree = "<group>"; };
 		3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringSerialization.h; sourceTree = "<group>"; };
 		3B6EAFA4188F5D78005D2EB4 /* CMDQueryStringSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringSerialization.m; sourceTree = "<group>"; };
 		3B6EAFAA188F5D78005D2EB4 /* CMDQueryStringSerializationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMDQueryStringSerializationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +101,8 @@
 			children = (
 				93832CCD18958BAF005D5744 /* NSString+CMDQueryStringSerialization.h */,
 				93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */,
+				3B1DB7501970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.h */,
+				3B1DB7511970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -140,6 +139,7 @@
 		3B6EAF9F188F5D78005D2EB4 /* CMDQueryStringSerialization */ = {
 			isa = PBXGroup;
 			children = (
+				3B1DB7531970E5A40076F82B /* CMDQueryStringWritingOptions.h */,
 				3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */,
 				3B6EAFA4188F5D78005D2EB4 /* CMDQueryStringSerialization.m */,
 				3BF7142218B3FAD300D596B6 /* CMDQueryStringReader.h */,
@@ -156,7 +156,6 @@
 		3B6EAFA0188F5D78005D2EB4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B6EAFA1188F5D78005D2EB4 /* CMDQueryStringSerialization-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +227,7 @@
 			);
 			dependencies = (
 				3B6EAFB1188F5D79005D2EB4 /* PBXTargetDependency */,
+				3B1DB7551970EA430076F82B /* PBXTargetDependency */,
 			);
 			name = CMDQueryStringSerializationTests;
 			productName = CMDQueryStringSerializationTests;
@@ -242,6 +242,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Caleb Davenport";
+				TargetAttributes = {
+					3B6EAFA9188F5D78005D2EB4 = {
+						TestTargetID = 3B6EAF99188F5D78005D2EB4;
+					};
+				};
 			};
 			buildConfigurationList = 3B6EAF95188F5D78005D2EB4 /* Build configuration list for PBXProject "CMDQueryStringSerialization" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -277,14 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF21A4718F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */,
 				3B6EAFA5188F5D78005D2EB4 /* CMDQueryStringSerialization.m in Sources */,
 				93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */,
-				3BF21A4B18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */,
-				3BF21A5218F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */,
 				3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
-				3BF21A4F18F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */,
-				3BF21A4318F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */,
+				3B1DB7521970E2000076F82B /* NSObject+CMDQueryStringValueTransformer.m in Sources */,
 				3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,21 +294,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF21A4818F0C1840029100A /* CMDQueryStringDateTransformer.m in Sources */,
 				3B6EAFBA188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m in Sources */,
-				93832CD018958D56005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */,
-				3BF21A4C18F0C4F90029100A /* CMDQueryStringNumberTransformer.m in Sources */,
-				3BF21A5318F0C58A0029100A /* CMDQueryStringValueTransformer.m in Sources */,
-				3BF21A4418F0C06D0029100A /* CMDQueryStringArrayTransformer.m in Sources */,
-				3BF21A5018F0C5040029100A /* CMDQueryStringStringTransformer.m in Sources */,
-				3BF7142518B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
-				3BF7142918B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3B1DB7551970EA430076F82B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6EAF99188F5D78005D2EB4 /* CMDQueryStringSerialization */;
+			targetProxy = 3B1DB7541970EA430076F82B /* PBXContainerItemProxy */;
+		};
 		3B6EAFB1188F5D79005D2EB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3B6EAF99188F5D78005D2EB4 /* CMDQueryStringSerialization */;
@@ -342,8 +340,10 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -379,9 +379,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -398,9 +400,6 @@
 		3B6EAFBE188F5D79005D2EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/CMDQueryStringSerialization.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CMDQueryStringSerialization/CMDQueryStringSerialization-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -410,9 +409,6 @@
 		3B6EAFBF188F5D79005D2EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/CMDQueryStringSerialization.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CMDQueryStringSerialization/CMDQueryStringSerialization-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
