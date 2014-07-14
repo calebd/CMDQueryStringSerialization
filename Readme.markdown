@@ -1,8 +1,6 @@
-# CMDQueryStringSerialization
+# CMDQueryStringSerialization [![Build Status](https://travis-ci.org/calebd/CMDQueryStringSerialization.svg?branch=master)](https://travis-ci.org/calebd/CMDQueryStringSerialization)
 
 Easily convert between dictionaries and query strings in iOS and OS X. The API is similar to `NSJSONSerialization`.
-
-Master build status: [![Build Status](https://travis-ci.org/calebd/CMDQueryStringSerialization.svg?branch=master)](https://travis-ci.org/calebd/CMDQueryStringSerialization)
 
 ## Usage
 
