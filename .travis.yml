@@ -1,4 +1,6 @@
 language: objective-c
-xcode_project: CMDQueryStringSerialization.xcodeproj
-xcode_scheme: CMDQueryStringSerialization
-xcode_sdk: iphonesimulator7.1
+before_script:
+    - brew update
+    - brew upgrade xctool
+script:
+    - xctool -project CMDQueryStringSerialization.xcodeproj -scheme CMDQueryStringSerialization -sdk iphonesimulator test
