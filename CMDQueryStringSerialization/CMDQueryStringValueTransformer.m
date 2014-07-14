@@ -62,7 +62,7 @@
         NSString *pair = [object CMDQueryStringValueTransformer_queryStringWithKey:key options:options];
         [pairs addObject:pair];
     }];
-    [pairs sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    [pairs sortedArrayUsingSelector:@selector(compare:)];
     return [pairs componentsJoinedByString:@"&"];
 }
 

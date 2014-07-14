@@ -59,14 +59,6 @@
 		3B6EAFB5188F5D79005D2EB4 /* CMDQueryStringSerializationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMDQueryStringSerializationTests-Info.plist"; sourceTree = "<group>"; };
 		3B6EAFB7188F5D79005D2EB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B6EAFB9188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringSerializationTests.m; sourceTree = "<group>"; };
-		3BF21A4118F0C06D0029100A /* CMDQueryStringArrayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringArrayTransformer.h; sourceTree = "<group>"; };
-		3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringArrayTransformer.m; sourceTree = "<group>"; };
-		3BF21A4518F0C1840029100A /* CMDQueryStringDateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringDateTransformer.h; sourceTree = "<group>"; };
-		3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringDateTransformer.m; sourceTree = "<group>"; };
-		3BF21A4918F0C4F90029100A /* CMDQueryStringNumberTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringNumberTransformer.h; sourceTree = "<group>"; };
-		3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringNumberTransformer.m; sourceTree = "<group>"; };
-		3BF21A4D18F0C5040029100A /* CMDQueryStringStringTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringStringTransformer.h; sourceTree = "<group>"; };
-		3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringStringTransformer.m; sourceTree = "<group>"; };
 		3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringValueTransformer.m; sourceTree = "<group>"; };
 		3BF7142218B3FAD300D596B6 /* CMDQueryStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringReader.h; sourceTree = "<group>"; };
 		3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringReader.m; sourceTree = "<group>"; };
@@ -182,14 +174,6 @@
 			children = (
 				3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */,
 				3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */,
-				3BF21A4118F0C06D0029100A /* CMDQueryStringArrayTransformer.h */,
-				3BF21A4218F0C06D0029100A /* CMDQueryStringArrayTransformer.m */,
-				3BF21A4518F0C1840029100A /* CMDQueryStringDateTransformer.h */,
-				3BF21A4618F0C1840029100A /* CMDQueryStringDateTransformer.m */,
-				3BF21A4918F0C4F90029100A /* CMDQueryStringNumberTransformer.h */,
-				3BF21A4A18F0C4F90029100A /* CMDQueryStringNumberTransformer.m */,
-				3BF21A4D18F0C5040029100A /* CMDQueryStringStringTransformer.h */,
-				3BF21A4E18F0C5040029100A /* CMDQueryStringStringTransformer.m */,
 			);
 			name = Transformers;
 			sourceTree = "<group>";
