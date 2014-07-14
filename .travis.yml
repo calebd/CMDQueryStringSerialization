@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: CMDQueryStringSerialization.xcodeproj
 xcode_scheme: CMDQueryStringSerialization
+xcode_sdk: iphonesimulator7.1
