@@ -1,6 +1,3 @@
 language: objective-c
-before_script:
-    - brew update
-    - brew upgrade xctool
 script:
     - xctool -project CMDQueryStringSerialization.xcodeproj -scheme CMDQueryStringSerialization -sdk iphonesimulator test
