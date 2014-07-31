@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B0EA95619745A150063266A /* CMDQueryStringWritingOptions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B1DB7531970E5A40076F82B /* CMDQueryStringWritingOptions.h */; };
 		3B0EA95719745A240063266A /* libCMDQueryStringSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6EAF9A188F5D78005D2EB4 /* libCMDQueryStringSerialization.a */; };
-		3B0EA95819745AE90063266A /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */; };
-		3B6EAFA3188F5D78005D2EB4 /* CMDQueryStringSerialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */; };
-		3B6EAFA5188F5D78005D2EB4 /* CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EAFA4188F5D78005D2EB4 /* CMDQueryStringSerialization.m */; };
+		3B2304AB198AB3850041975A /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2304A3198AB3850041975A /* CMDQueryStringReader.m */; };
+		3B2304AC198AB3850041975A /* CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2304A5198AB3850041975A /* CMDQueryStringSerialization.m */; };
+		3B2304AD198AB3850041975A /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2304A7198AB3850041975A /* CMDQueryStringValueTransformer.m */; };
+		3B2304AE198AB3850041975A /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2304AA198AB3850041975A /* NSString+CMDQueryStringSerialization.m */; };
 		3B6EAFB8188F5D79005D2EB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B6EAFB6188F5D79005D2EB4 /* InfoPlist.strings */; };
 		3B6EAFBA188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EAFB9188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m */; };
-		3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */; };
-		3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */; };
-		93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */; };
+		3BA6BEA5C0334CF39D850E6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 528AAADF68E947A4B197A807 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,30 +41,28 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				3B0EA95619745A150063266A /* CMDQueryStringWritingOptions.h in CopyFiles */,
-				3B6EAFA3188F5D78005D2EB4 /* CMDQueryStringSerialization.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B1DB7531970E5A40076F82B /* CMDQueryStringWritingOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringWritingOptions.h; sourceTree = "<group>"; };
-		3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringValueTransformer.h; sourceTree = "<group>"; };
+		1FA5FE7907B44006AE9FDFA3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		3B2304A2198AB3850041975A /* CMDQueryStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringReader.h; sourceTree = "<group>"; };
+		3B2304A3198AB3850041975A /* CMDQueryStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringReader.m; sourceTree = "<group>"; };
+		3B2304A4198AB3850041975A /* CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringSerialization.h; sourceTree = "<group>"; };
+		3B2304A5198AB3850041975A /* CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringSerialization.m; sourceTree = "<group>"; };
+		3B2304A6198AB3850041975A /* CMDQueryStringValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringValueTransformer.h; sourceTree = "<group>"; };
+		3B2304A7198AB3850041975A /* CMDQueryStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringValueTransformer.m; sourceTree = "<group>"; };
+		3B2304A8198AB3850041975A /* CMDQueryStringWritingOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringWritingOptions.h; sourceTree = "<group>"; };
+		3B2304A9198AB3850041975A /* NSString+CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CMDQueryStringSerialization.h"; sourceTree = "<group>"; };
+		3B2304AA198AB3850041975A /* NSString+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
 		3B6EAF9A188F5D78005D2EB4 /* libCMDQueryStringSerialization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCMDQueryStringSerialization.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringSerialization.h; sourceTree = "<group>"; };
-		3B6EAFA4188F5D78005D2EB4 /* CMDQueryStringSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringSerialization.m; sourceTree = "<group>"; };
 		3B6EAFAA188F5D78005D2EB4 /* CMDQueryStringSerializationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMDQueryStringSerializationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6EAFB5188F5D79005D2EB4 /* CMDQueryStringSerializationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMDQueryStringSerializationTests-Info.plist"; sourceTree = "<group>"; };
 		3B6EAFB7188F5D79005D2EB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B6EAFB9188F5D79005D2EB4 /* CMDQueryStringSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringSerializationTests.m; sourceTree = "<group>"; };
-		3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringValueTransformer.m; sourceTree = "<group>"; };
-		3BF7142218B3FAD300D596B6 /* CMDQueryStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringReader.h; sourceTree = "<group>"; };
-		3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringReader.m; sourceTree = "<group>"; };
-		3BF7142618B3FB3200D596B6 /* CMDQueryStringWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringWriter.h; sourceTree = "<group>"; };
-		3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringWriter.m; sourceTree = "<group>"; };
-		93832CCD18958BAF005D5744 /* NSString+CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CMDQueryStringSerialization.h"; sourceTree = "<group>"; };
-		93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
+		528AAADF68E947A4B197A807 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA6BEA5C0334CF39D850E6D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,22 +85,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B63E2C418B40367002812A5 /* Categories */ = {
+		3B2304A1198AB3850041975A /* CMDQueryStringSerialization */ = {
 			isa = PBXGroup;
 			children = (
-				93832CCD18958BAF005D5744 /* NSString+CMDQueryStringSerialization.h */,
-				93832CCE18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m */,
+				3B2304A4198AB3850041975A /* CMDQueryStringSerialization.h */,
+				3B2304A5198AB3850041975A /* CMDQueryStringSerialization.m */,
+				3B2304A8198AB3850041975A /* CMDQueryStringWritingOptions.h */,
+				3BB9F66C198AB5B900220F84 /* Reader */,
+				3BB9F66B198AB5A200220F84 /* Transformers */,
+				3BB9F66D198AB5C100220F84 /* Categories */,
 			);
-			name = Categories;
+			path = CMDQueryStringSerialization;
 			sourceTree = "<group>";
 		};
 		3B6EAF91188F5D78005D2EB4 = {
 			isa = PBXGroup;
 			children = (
-				3B6EAF9F188F5D78005D2EB4 /* CMDQueryStringSerialization */,
+				3B2304A1198AB3850041975A /* CMDQueryStringSerialization */,
 				3B6EAFB3188F5D79005D2EB4 /* CMDQueryStringSerializationTests */,
 				3B6EAF9C188F5D78005D2EB4 /* Frameworks */,
 				3B6EAF9B188F5D78005D2EB4 /* Products */,
+				1FA5FE7907B44006AE9FDFA3 /* Pods.xcconfig */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -122,24 +124,9 @@
 		3B6EAF9C188F5D78005D2EB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				528AAADF68E947A4B197A807 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3B6EAF9F188F5D78005D2EB4 /* CMDQueryStringSerialization */ = {
-			isa = PBXGroup;
-			children = (
-				3B1DB7531970E5A40076F82B /* CMDQueryStringWritingOptions.h */,
-				3B6EAFA2188F5D78005D2EB4 /* CMDQueryStringSerialization.h */,
-				3B6EAFA4188F5D78005D2EB4 /* CMDQueryStringSerialization.m */,
-				3BF7142218B3FAD300D596B6 /* CMDQueryStringReader.h */,
-				3BF7142318B3FAD300D596B6 /* CMDQueryStringReader.m */,
-				3BF7142618B3FB3200D596B6 /* CMDQueryStringWriter.h */,
-				3BF7142718B3FB3200D596B6 /* CMDQueryStringWriter.m */,
-				93832CC218957E89005D5744 /* Transformers */,
-				3B63E2C418B40367002812A5 /* Categories */,
-			);
-			path = CMDQueryStringSerialization;
 			sourceTree = "<group>";
 		};
 		3B6EAFB3188F5D79005D2EB4 /* CMDQueryStringSerializationTests */ = {
@@ -160,13 +147,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		93832CC218957E89005D5744 /* Transformers */ = {
+		3BB9F66B198AB5A200220F84 /* Transformers */ = {
 			isa = PBXGroup;
 			children = (
-				3B63E2C518B415E7002812A5 /* CMDQueryStringValueTransformer.h */,
-				3BF21A5118F0C58A0029100A /* CMDQueryStringValueTransformer.m */,
+				3B2304A6198AB3850041975A /* CMDQueryStringValueTransformer.h */,
+				3B2304A7198AB3850041975A /* CMDQueryStringValueTransformer.m */,
 			);
 			name = Transformers;
+			sourceTree = "<group>";
+		};
+		3BB9F66C198AB5B900220F84 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				3B2304A2198AB3850041975A /* CMDQueryStringReader.h */,
+				3B2304A3198AB3850041975A /* CMDQueryStringReader.m */,
+			);
+			name = Reader;
+			sourceTree = "<group>";
+		};
+		3BB9F66D198AB5C100220F84 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3B2304A9198AB3850041975A /* NSString+CMDQueryStringSerialization.h */,
+				3B2304AA198AB3850041975A /* NSString+CMDQueryStringSerialization.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B6EAFBD188F5D79005D2EB4 /* Build configuration list for PBXNativeTarget "CMDQueryStringSerialization" */;
 			buildPhases = (
+				AF924C540B6D4AAB8A963FB8 /* Check Pods Manifest.lock */,
 				3B6EAF96188F5D78005D2EB4 /* Sources */,
 				3B6EAF97188F5D78005D2EB4 /* Frameworks */,
 				3B6EAF98188F5D78005D2EB4 /* CopyFiles */,
+				6D284C235B9F4B79A2619BAF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,16 +258,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6D284C235B9F4B79A2619BAF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF924C540B6D4AAB8A963FB8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B6EAF96188F5D78005D2EB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0EA95819745AE90063266A /* CMDQueryStringValueTransformer.m in Sources */,
-				3B6EAFA5188F5D78005D2EB4 /* CMDQueryStringSerialization.m in Sources */,
-				93832CCF18958BAF005D5744 /* NSString+CMDQueryStringSerialization.m in Sources */,
-				3BF7142418B3FAD300D596B6 /* CMDQueryStringReader.m in Sources */,
-				3BF7142818B3FB3200D596B6 /* CMDQueryStringWriter.m in Sources */,
+				3B2304AB198AB3850041975A /* CMDQueryStringReader.m in Sources */,
+				3B2304AD198AB3850041975A /* CMDQueryStringValueTransformer.m in Sources */,
+				3B2304AC198AB3850041975A /* CMDQueryStringSerialization.m in Sources */,
+				3B2304AE198AB3850041975A /* NSString+CMDQueryStringSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +412,7 @@
 		};
 		3B6EAFBE188F5D79005D2EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA5FE7907B44006AE9FDFA3 /* Pods.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -381,6 +421,7 @@
 		};
 		3B6EAFBF188F5D79005D2EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA5FE7907B44006AE9FDFA3 /* Pods.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

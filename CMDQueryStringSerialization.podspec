@@ -18,4 +18,6 @@ Pod::Spec.new do |s|
     'CMDQueryStringSerialization/CMDQueryStringSerialization.h',
     'CMDQueryStringSerialization/CMDQueryStringWritingOptions.h'
 
+  s.dependency 'ISO8601'
+
 end

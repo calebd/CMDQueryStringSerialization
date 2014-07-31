@@ -7,8 +7,8 @@
 //
 
 #import "CMDQueryStringSerialization.h"
-#import "CMDQueryStringWriter.h"
 #import "CMDQueryStringReader.h"
+#import "CMDQueryStringValueTransformer.h"
 
 @implementation CMDQueryStringSerialization
 
@@ -28,8 +28,7 @@
 
 
 + (NSString *)queryStringWithDictionary:(NSDictionary *)dictionary options:(CMDQueryStringWritingOptions)options {
-    CMDQueryStringWriter *writer = [[CMDQueryStringWriter alloc] initWithDictionary:dictionary options:options];
-    return [writer stringValue];
+    return [dictionary CMDQueryStringValueTransformer_queryStringWithKey:nil options:options];
 }
 
 @end

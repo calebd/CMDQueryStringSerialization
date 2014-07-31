@@ -9,6 +9,8 @@
 #import "CMDQueryStringValueTransformer.h"
 #import "NSString+CMDQueryStringSerialization.h"
 
+#import <ISO8601/ISO8601.h>
+
 @implementation NSObject (CMDQueryStringValueTransformer)
 
 - (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
@@ -71,8 +73,13 @@
 @implementation NSDate (CMDQueryStringValueTransformer)
 
 - (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
-    NSNumber *number = @((NSInteger)[self timeIntervalSince1970]);
-    return [number CMDQueryStringValueTransformer_queryStringWithKey:key options:options];
+    if ((options & CMDQueryStringWritingOptionDateAsISO8601String) == CMDQueryStringWritingOptionDateAsISO8601String) {
+        return [[self ISO8601String] CMDQueryStringValueTransformer_queryStringWithKey:key options:options];
+    }
+    else {
+        NSNumber *number = @((NSInteger)[self timeIntervalSince1970]);
+        return [number CMDQueryStringValueTransformer_queryStringWithKey:key options:options];
+    }
 }
 
 @end

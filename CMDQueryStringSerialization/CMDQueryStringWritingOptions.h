@@ -17,6 +17,9 @@ typedef NS_OPTIONS(NSUInteger, CMDQueryStringWritingOptions) {
     // Arrays encoded with format: `key=value1,value2`
     CMDQueryStringWritingOptionArrayCommaSeparatedValues = 3 << 4,
     
-    // Dates encoded as Unix time stamps
-    CMDQueryStringWritingOptionDateAsUnixTimestamp = 1 << 8
+    // Defualt: Dates encoded as Unix time stamps
+    CMDQueryStringWritingOptionDateAsUnixTimestamp = 1 << 8,
+
+    // Dates encoded as ISO8601 strings
+    CMDQueryStringWritingOptionDateAsISO8601String = 2 << 8,
 };

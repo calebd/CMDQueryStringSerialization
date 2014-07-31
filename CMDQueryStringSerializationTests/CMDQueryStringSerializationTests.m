@@ -210,4 +210,14 @@
     XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
 }
 
+- (void)testDateAsISO8601String {
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:1406759723];
+    NSString *desiredString = @"date=2014-07-30T15%3A35%3A23-07%3A00";
+
+    NSDictionary *dictionary = @{ @"date": date };
+
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:dictionary options:CMDQueryStringWritingOptionDateAsISO8601String];
+    XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
+}
+
 @end
