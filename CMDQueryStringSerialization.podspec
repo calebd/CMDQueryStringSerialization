@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'CMDQueryStringSerialization'
-  s.version      = '0.3.0'
+  s.version      = '0.3.1'
   s.summary      = 'Easy conversion between dictionaries and query strings in Objective-C.'
   s.homepage     = 'https://github.com/calebd/CMDQueryStringSerialization'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
