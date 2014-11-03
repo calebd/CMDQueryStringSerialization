@@ -1,3 +1,3 @@
 language: objective-c
 script:
-    - xctool -project CMDQueryStringSerialization.xcodeproj -scheme CMDQueryStringSerialization -sdk iphonesimulator test
+    - xctool -workspace Example/CMDQueryStringSerialization.xcworkspace -scheme Tests -sdk iphonesimulator test

@@ -1,6 +1,6 @@
 //
-//  CMDQueryStringSerializationTests.m
-//  CMDQueryStringSerializationTests
+//  Tests.m
+//  Tests
 //
 //  Created by Caleb Davenport on 1/21/14.
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
@@ -8,7 +8,7 @@
 
 @import XCTest;
 
-#import "CMDQueryStringSerialization.h"
+#import <CMDQueryStringSerialization/CMDQueryStringSerialization.h>
 
 @interface CMDQueryStringSerializationTests : XCTestCase
 
