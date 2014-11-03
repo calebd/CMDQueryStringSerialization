@@ -1,4 +1,9 @@
-# CMDQueryStringSerialization ![Pod Version](https://cocoapod-badges.herokuapp.com/v/CMDQueryStringSerialization/badge.png) ![Pod Platform](https://cocoapod-badges.herokuapp.com/p/CMDQueryStringSerialization/badge.png) ![Pod License](https://cocoapod-badges.herokuapp.com/l/$PODNAME/badge.png) [![Build Status](https://travis-ci.org/calebd/CMDQueryStringSerialization.svg?branch=master)](https://travis-ci.org/calebd/CMDQueryStringSerialization)
+# CMDQueryStringSerialization
+
+![Pod Version](https://cocoapod-badges.herokuapp.com/v/CMDQueryStringSerialization/badge.png)
+![Pod Platform](https://cocoapod-badges.herokuapp.com/p/CMDQueryStringSerialization/badge.png)
+![Pod License](https://cocoapod-badges.herokuapp.com/l/CMDQueryStringSerialization/badge.png)
+[![Build Status](https://travis-ci.org/calebd/CMDQueryStringSerialization.svg?branch=master)](https://travis-ci.org/calebd/CMDQueryStringSerialization)
 
 Easily convert between dictionaries and query strings in iOS and OS X. The API is similar to `NSJSONSerialization`.
 
