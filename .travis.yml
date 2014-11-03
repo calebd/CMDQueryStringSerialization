@@ -1,4 +1,0 @@
-language: objective-c
-install: cd Example && pod install && cd -
-script:
-    - xctool -workspace Example/CMDQueryStringSerialization.xcworkspace -scheme Tests -sdk iphonesimulator test
