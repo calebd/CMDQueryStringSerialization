@@ -17,9 +17,9 @@
 		3B6EAFAA188F5D78005D2EB4 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6EAFB5188F5D79005D2EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6EAFB9188F5D79005D2EB4 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		3BC800B01A07FF1F00BEB124 /* CMDQueryStringSerialization.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMDQueryStringSerialization.podspec; sourceTree = "<group>"; };
-		3BC800B11A07FF1F00BEB124 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3BC800B21A07FF1F00BEB124 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.markdown; sourceTree = "<group>"; };
+		3BC3A3151A0800E900CCE69A /* CMDQueryStringSerialization.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = CMDQueryStringSerialization.podspec; path = ../CMDQueryStringSerialization.podspec; sourceTree = "<group>"; };
+		3BC3A3161A0800E900CCE69A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3BC3A3171A0800E900CCE69A /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Readme.markdown; path = ../Readme.markdown; sourceTree = "<group>"; };
 		528AAADF68E947A4B197A807 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFEFE5B056697712D338E16 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9DB075E5FA9504759595C373 /* libPods-CMDQueryStringSerialization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CMDQueryStringSerialization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				3BC800AF1A07FF0D00BEB124 /* Podspec Metadata */,
-				3BC800B01A07FF1F00BEB124 /* CMDQueryStringSerialization.podspec */,
-				3BC800B21A07FF1F00BEB124 /* Readme.markdown */,
-				3BC800B11A07FF1F00BEB124 /* LICENSE */,
 				3B6EAFB3188F5D79005D2EB4 /* Tests */,
 				3B6EAF9C188F5D78005D2EB4 /* Frameworks */,
 				3B6EAF9B188F5D78005D2EB4 /* Products */,
@@ -86,6 +83,9 @@
 		3BC800AF1A07FF0D00BEB124 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				3BC3A3151A0800E900CCE69A /* CMDQueryStringSerialization.podspec */,
+				3BC3A3171A0800E900CCE69A /* Readme.markdown */,
+				3BC3A3161A0800E900CCE69A /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
