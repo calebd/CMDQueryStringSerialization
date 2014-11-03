@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3B6EAFBA188F5D79005D2EB4 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6EAFB9188F5D79005D2EB4 /* Tests.m */; };
 		7BEEE688BD7BADA93F643915 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 528AAADF68E947A4B197A807 /* libPods.a */; };
-		884F597FC427BF9296809CD1 /* libPods-CMDQueryStringSerializationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7E744BCF04096BDF83D8B2 /* libPods-CMDQueryStringSerializationTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884F597FC427BF9296809CD1 /* libPods-CMDQueryStringSerializationTests.a in Frameworks */,
 				7BEEE688BD7BADA93F643915 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
