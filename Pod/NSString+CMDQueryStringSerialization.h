@@ -6,7 +6,11 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
+#if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
+#else
+#import <Foundation/Foundation.h>
+#endif
 
 @interface NSString (CMDQueryStringSerialization)
 
