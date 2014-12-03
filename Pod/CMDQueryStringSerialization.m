@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
-@import Foundation;
-
 #import "CMDQueryStringSerialization.h"
 #import "CMDQueryStringReader.h"
 #import "CMDQueryStringValueTransformer.h"
