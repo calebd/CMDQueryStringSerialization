@@ -14,8 +14,8 @@
 @implementation NSObject (CMDQueryStringValueTransformer)
 
 - (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
-    NSString *escapedKey = [key cmd_stringByAddingEscapes];
-    NSString *escapedValue = [[self description] cmd_stringByAddingEscapes];
+    NSString *escapedKey = [key CMDQueryStringSerialization_stringByAddingEscapes];
+    NSString *escapedValue = [[self description] CMDQueryStringSerialization_stringByAddingEscapes];
     return [NSString stringWithFormat:@"%@=%@", escapedKey, escapedValue];
 }
 
@@ -24,8 +24,8 @@
 @implementation NSArray (CMDQueryStringValueTransformer)
 
 - (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
-    NSString *escapedKey = [key cmd_stringByAddingEscapes];
-    NSArray *escapedValues = [self valueForKey:@"cmd_stringByAddingEscapes"];
+    NSString *escapedKey = [key CMDQueryStringSerialization_stringByAddingEscapes];
+    NSArray *escapedValues = [self valueForKey:@"CMDQueryStringSerialization_stringByAddingEscapes"];
     if ((options & CMDQueryStringWritingOptionArrayCommaSeparatedValues) == CMDQueryStringWritingOptionArrayCommaSeparatedValues) {
         return [NSString stringWithFormat:@"%@=%@", escapedKey, [escapedValues componentsJoinedByString:@","]];
     }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'CMDQueryStringSerialization'
-  s.version      = '0.3.2'
+  s.version      = '0.3.3'
   s.summary      = 'Easy conversion between dictionaries and query strings in Objective-C.'
   s.homepage     = 'https://github.com/calebd/CMDQueryStringSerialization'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
-  s.source_files = 'Pod/*'
+  s.source_files = 'CMDQueryStringSerialization/*.{h,m}'
   s.dependency 'ISO8601'
 end

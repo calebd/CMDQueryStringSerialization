@@ -10,7 +10,7 @@
 
 @implementation NSString (CMDQueryStringSerialization)
 
-- (NSString *)cmd_stringByAddingEscapes {
+- (NSString *)CMDQueryStringSerialization_stringByAddingEscapes {
     CFStringRef string = CFURLCreateStringByAddingPercentEscapes(
         NULL,
         (CFStringRef)self,
@@ -21,7 +21,7 @@
 }
 
 
-- (NSString *)cmd_stringByRemovingEscapes {
+- (NSString *)CMDQueryStringSerialization_stringByRemovingEscapes {
     return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 

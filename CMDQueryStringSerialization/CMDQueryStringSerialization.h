@@ -7,7 +7,7 @@
 //
 
 @import Foundation;
-#import "CMDQueryStringWritingOptions.h"
+#import <CMDQueryStringSerialization/CMDQueryStringWritingOptions.h>
 
 /**
  Easily convert between query strings and dictionaries.

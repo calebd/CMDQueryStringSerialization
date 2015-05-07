@@ -63,12 +63,12 @@
         }
         
         key = [key stringByReplacingOccurrencesOfString:@"[]" withString:@""];
-        key = [key cmd_stringByRemovingEscapes];
+        key = [key CMDQueryStringSerialization_stringByRemovingEscapes];
         key = key ?: @"";
         
         NSArray *values = [value componentsSeparatedByString:@","];
         for (__strong NSString *value in values) {
-            value = [value cmd_stringByRemovingEscapes];
+            value = [value CMDQueryStringSerialization_stringByRemovingEscapes];
             value = value ?: @"";
             
             block(key, value);
