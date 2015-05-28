@@ -8,6 +8,7 @@
 
 @import Foundation;
 #import <CMDQueryStringSerialization/CMDQueryStringWritingOptions.h>
+#import <CMDQueryStringSerialization/NSURL+CMDQueryStringSerialization.h>
 
 /**
  Easily convert between query strings and dictionaries.

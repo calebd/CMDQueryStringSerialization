@@ -164,9 +164,7 @@
 
 - (void)testDictionaryWithDateAsUnixTimestamp {
     NSDate *inputDate = [NSDate date];
-    NSDictionary *inputDictionary = @{
-                                      @"date" : inputDate
-                                      };
+    NSDictionary *inputDictionary = @{ @"date" : inputDate };
     NSString *desiredString = [NSString stringWithFormat:@"date=%@", @((NSInteger)[inputDate timeIntervalSince1970])];
 
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:inputDictionary];
@@ -217,6 +215,61 @@
     
     NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:dictionary options:CMDQueryStringWritingOptionDateAsISO8601String];
     XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
+}
+
+- (void)testNSURLQueryDictionary {
+    NSDictionary *desiredDictionary = @{
+        @"key_one" : @"value_one",
+        @"key_two" : @"value_two"
+    };
+
+    NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
+    URL = [URL cmd_URLWithQueryDictionary:desiredDictionary];
+
+    NSDictionary *actualDictionary = URL.cmd_queryDictionary;
+    XCTAssertEqualObjects(actualDictionary, desiredDictionary, @"Query parameters are incorrect.");
+}
+
+- (void)testNSURLReplaceQueryDictionary {
+    NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
+
+    NSDictionary *firstDictionary = @{
+        @"key_one" : @"value_one",
+        @"key_two" : @"value_two"
+    };
+    NSDictionary *secondDictionary = @{
+        @"key_three" : @"value_one",
+        @"key_four" : @"value_two"
+    };
+
+    URL = [URL cmd_URLWithQueryDictionary:firstDictionary];
+    XCTAssertEqualObjects(URL.cmd_queryDictionary, firstDictionary, @"Query parameters are incorrect.");
+
+    URL = [URL cmd_URLWithQueryDictionary:secondDictionary];
+    XCTAssertEqualObjects(URL.cmd_queryDictionary, secondDictionary, @"Query parameters are incorrect.");
+}
+
+- (void)testNSURLAddQueryDictionary {
+    NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
+
+    NSDictionary *firstDictionary = @{
+        @"key_one" : @"value_one",
+        @"key_two" : @"value_two"
+    };
+    NSDictionary *secondDictionary = @{
+        @"key_three" : @"value_one",
+        @"key_four" : @"value_two"
+    };
+
+    NSMutableDictionary *mergedDictionary = [[NSMutableDictionary alloc] init];
+    [mergedDictionary addEntriesFromDictionary:firstDictionary];
+    [mergedDictionary addEntriesFromDictionary:secondDictionary];
+
+    URL = [URL cmd_URLByAddingQueryDictionary:firstDictionary];
+    XCTAssertEqualObjects(URL.cmd_queryDictionary, firstDictionary, @"Query parameters are incorrect.");
+    
+    URL = [URL cmd_URLByAddingQueryDictionary:secondDictionary];
+    XCTAssertEqualObjects(URL.cmd_queryDictionary, mergedDictionary, @"Query parameters are incorrect.");
 }
 
 @end
