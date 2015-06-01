@@ -12,6 +12,10 @@
 @implementation NSURL (CMDQueryStringSerialization)
 
 - (NSURL *)cmd_URLWithQueryDictionary:(NSDictionary *)dictionary {
+    if ([dictionary count] == 0) {
+        return self;
+    }
+
     NSURLComponents *components = [NSURLComponents componentsWithURL:self resolvingAgainstBaseURL:YES];
     components.query = [CMDQueryStringSerialization queryStringWithDictionary:dictionary];
     return components.URL;

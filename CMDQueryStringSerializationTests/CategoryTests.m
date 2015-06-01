@@ -16,9 +16,9 @@
 
 - (void)testQueryDictionary {
     NSDictionary *desiredDictionary = @{
-                                        @"key_one" : @"value_one",
-                                        @"key_two" : @"value_two"
-                                        };
+        @"key_one" : @"value_one",
+        @"key_two" : @"value_two"
+    };
 
     NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
     URL = [URL cmd_URLWithQueryDictionary:desiredDictionary];
@@ -31,13 +31,13 @@
     NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
 
     NSDictionary *firstDictionary = @{
-                                      @"key_one" : @"value_one",
-                                      @"key_two" : @"value_two"
-                                      };
+        @"key_one" : @"value_one",
+        @"key_two" : @"value_two"
+    };
     NSDictionary *secondDictionary = @{
-                                       @"key_three" : @"value_one",
-                                       @"key_four" : @"value_two"
-                                       };
+        @"key_three" : @"value_one",
+        @"key_four" : @"value_two"
+    };
 
     URL = [URL cmd_URLWithQueryDictionary:firstDictionary];
     XCTAssertEqualObjects(URL.cmd_queryDictionary, firstDictionary, @"Query parameters are incorrect.");
@@ -50,13 +50,13 @@
     NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
 
     NSDictionary *firstDictionary = @{
-                                      @"key_one" : @"value_one",
-                                      @"key_two" : @"value_two"
-                                      };
+        @"key_one" : @"value_one",
+        @"key_two" : @"value_two"
+    };
     NSDictionary *secondDictionary = @{
-                                       @"key_three" : @"value_one",
-                                       @"key_four" : @"value_two"
-                                       };
+        @"key_three" : @"value_one",
+        @"key_four" : @"value_two"
+    };
 
     NSMutableDictionary *mergedDictionary = [[NSMutableDictionary alloc] init];
     [mergedDictionary addEntriesFromDictionary:firstDictionary];
@@ -69,7 +69,7 @@
     XCTAssertEqualObjects(URL.cmd_queryDictionary, mergedDictionary, @"Query parameters are incorrect.");
 }
 
-- (void)testNoOpIfEmpty {
+- (void)testEmptyQueryDictionary {
     NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
     XCTAssertEqualObjects(URL.absoluteString, [URL cmd_URLByAddingQueryDictionary:nil].absoluteString);
     XCTAssertEqualObjects(URL.absoluteString, [URL cmd_URLByAddingQueryDictionary:@{}].absoluteString);
@@ -77,11 +77,11 @@
 
 - (void)testEncodeAndDecode {
     NSDictionary *parameters = @{
-                                 @"message": @"Hello World",
-                                 @"number": @42,
-                                 @"favorite_things": @[ @"cats", @"flower bed spreads" ],
-                                 @"dictionary": @{ @"stuff": @"things and whatnot" }
-                                 };
+        @"message": @"Hello World",
+        @"number": @42,
+        @"favorite_things": @[ @"cats", @"flower bed spreads" ],
+        @"dictionary": @{ @"stuff": @"things and whatnot" }
+    };
 
     NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
     URL = [URL cmd_URLByAddingQueryDictionary:parameters];
