@@ -71,6 +71,10 @@
 
 - (void)testEmptyQueryDictionary {
     NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
+    
+    XCTAssertEqualObjects(URL.absoluteString, [URL cmd_URLWithQueryDictionary:nil].absoluteString);
+    XCTAssertEqualObjects(URL.absoluteString, [URL cmd_URLWithQueryDictionary:@{}].absoluteString);
+
     XCTAssertEqualObjects(URL.absoluteString, [URL cmd_URLByAddingQueryDictionary:nil].absoluteString);
     XCTAssertEqualObjects(URL.absoluteString, [URL cmd_URLByAddingQueryDictionary:@{}].absoluteString);
 }
