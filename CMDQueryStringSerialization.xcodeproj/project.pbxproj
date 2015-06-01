@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3634A0951B1CC25500B1C866 /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3634A0941B1CC25500B1C866 /* CategoryTests.m */; };
 		3B65D3D61B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B65D3D41B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B65D3D71B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B65D3D51B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m */; };
 		3BEA1CE51AFB40E50006A6E8 /* CMDQueryStringSerialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA1CD91AFB40E40006A6E8 /* CMDQueryStringSerialization.framework */; };
-		3BEA1CEC1AFB40E50006A6E8 /* CMDQueryStringSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CEB1AFB40E50006A6E8 /* CMDQueryStringSerializationTests.m */; };
+		3BEA1CEC1AFB40E50006A6E8 /* SerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CEB1AFB40E50006A6E8 /* SerializationTests.m */; };
 		3BEA1CFF1AFB41370006A6E8 /* CMDQueryStringReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF51AFB41370006A6E8 /* CMDQueryStringReader.h */; };
 		3BEA1D001AFB41370006A6E8 /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CF61AFB41370006A6E8 /* CMDQueryStringReader.m */; };
 		3BEA1D011AFB41370006A6E8 /* CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF71AFB41370006A6E8 /* CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,13 +50,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3634A0941B1CC25500B1C866 /* CategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
 		3B65D3D41B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+CMDQueryStringSerialization.h"; sourceTree = "<group>"; };
 		3B65D3D51B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
 		3BEA1CD91AFB40E40006A6E8 /* CMDQueryStringSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMDQueryStringSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEA1CDD1AFB40E40006A6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BEA1CE41AFB40E50006A6E8 /* CMDQueryStringSerializationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMDQueryStringSerializationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEA1CEA1AFB40E50006A6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BEA1CEB1AFB40E50006A6E8 /* CMDQueryStringSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringSerializationTests.m; sourceTree = "<group>"; };
+		3BEA1CEB1AFB40E50006A6E8 /* SerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerializationTests.m; sourceTree = "<group>"; };
 		3BEA1CF51AFB41370006A6E8 /* CMDQueryStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringReader.h; sourceTree = "<group>"; };
 		3BEA1CF61AFB41370006A6E8 /* CMDQueryStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDQueryStringReader.m; sourceTree = "<group>"; };
 		3BEA1CF71AFB41370006A6E8 /* CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringSerialization.h; sourceTree = "<group>"; };
@@ -129,7 +131,8 @@
 		3BEA1CE81AFB40E50006A6E8 /* CMDQueryStringSerializationTests */ = {
 			isa = PBXGroup;
 			children = (
-				3BEA1CEB1AFB40E50006A6E8 /* CMDQueryStringSerializationTests.m */,
+				3BEA1CEB1AFB40E50006A6E8 /* SerializationTests.m */,
+				3634A0941B1CC25500B1C866 /* CategoryTests.m */,
 				3BEA1CEA1AFB40E50006A6E8 /* Info.plist */,
 			);
 			path = CMDQueryStringSerializationTests;
@@ -268,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BEA1CEC1AFB40E50006A6E8 /* CMDQueryStringSerializationTests.m in Sources */,
+				3BEA1CEC1AFB40E50006A6E8 /* SerializationTests.m in Sources */,
+				3634A0951B1CC25500B1C866 /* CategoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
