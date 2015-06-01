@@ -75,4 +75,17 @@
     XCTAssertEqualObjects(URL.absoluteString, [URL cmd_URLByAddingQueryDictionary:@{}].absoluteString);
 }
 
+- (void)testEncodeAndDecode {
+    NSDictionary *parameters = @{
+                                 @"message": @"Hello World",
+                                 @"number": @42,
+                                 @"favorite_things": @[ @"cats", @"flower bed spreads" ],
+                                 @"dictionary": @{ @"stuff": @"things and whatnot" }
+                                 };
+
+    NSURL *URL = [NSURL URLWithString:@"http://apple.com"];
+    URL = [URL cmd_URLByAddingQueryDictionary:parameters];
+    XCTAssertEqualObjects(URL.cmd_queryDictionary, parameters);
+}
+
 @end
