@@ -18,6 +18,10 @@
 }
 
 - (NSURL *)cmd_URLByAddingQueryDictionary:(NSDictionary *)dictionary {
+    if ([dictionary count] == 0) {
+        return self;
+    }
+    
     NSURLComponents *components = [NSURLComponents componentsWithURL:self resolvingAgainstBaseURL:YES];
     NSMutableDictionary *mutableParameters = [[NSMutableDictionary alloc] init];
     [mutableParameters addEntriesFromDictionary:[CMDQueryStringSerialization dictionaryWithQueryString:components.query]];
