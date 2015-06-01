@@ -61,9 +61,9 @@
             key = [pair substringToIndex:range.location];
             value = [pair substringFromIndex:(range.location + range.length)];
         }
-        
-        key = [key stringByReplacingOccurrencesOfString:@"[]" withString:@""];
+
         key = [key CMDQueryStringSerialization_stringByRemovingEscapes];
+        key = [key stringByReplacingOccurrencesOfString:@"[]" withString:@""];
         key = key ?: @"";
         
         NSArray *values = [value componentsSeparatedByString:@","];
