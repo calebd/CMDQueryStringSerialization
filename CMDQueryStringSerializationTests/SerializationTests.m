@@ -211,8 +211,9 @@
     NSString *desiredString = @"date=2014-07-30T15%3A35%3A23-07%3A00";
     
     NSDictionary *dictionary = @{ @"date": date };
+    CMDQueryStringWritingOptions options = (CMDQueryStringWritingOptionDateAsISO8601String | CMDQueryStringWritingOptionAddPercentEscapes);
     
-    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:dictionary options:CMDQueryStringWritingOptionDateAsISO8601String];
+    NSString *actualString = [CMDQueryStringSerialization queryStringWithDictionary:dictionary options:options];
     XCTAssertEqualObjects(actualString, desiredString, @"Query parameters are incorrect.");
 }
 

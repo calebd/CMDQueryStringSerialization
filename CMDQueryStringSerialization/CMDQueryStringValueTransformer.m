@@ -14,8 +14,18 @@
 @implementation NSObject (CMDQueryStringValueTransformer)
 
 - (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
-    NSString *escapedKey = [key CMDQueryStringSerialization_stringByAddingEscapes];
-    NSString *escapedValue = [[self description] CMDQueryStringSerialization_stringByAddingEscapes];
+    NSString *escapedKey = nil;
+    NSString *escapedValue = nil;
+
+    if ((options & CMDQueryStringWritingOptionAddPercentEscapes) == CMDQueryStringWritingOptionAddPercentEscapes) {
+        escapedKey = [key CMDQueryStringSerialization_stringByAddingEscapes];
+        escapedValue = [self.description CMDQueryStringSerialization_stringByAddingEscapes];
+    }
+    else {
+        escapedKey = key;
+        escapedValue = self.description;
+    }
+
     return [NSString stringWithFormat:@"%@=%@", escapedKey, escapedValue];
 }
 
@@ -24,8 +34,18 @@
 @implementation NSArray (CMDQueryStringValueTransformer)
 
 - (NSString *)CMDQueryStringValueTransformer_queryStringWithKey:(NSString *)key options:(CMDQueryStringWritingOptions)options {
-    NSString *escapedKey = [key CMDQueryStringSerialization_stringByAddingEscapes];
-    NSArray *escapedValues = [self valueForKey:@"CMDQueryStringSerialization_stringByAddingEscapes"];
+    NSString *escapedKey = nil;
+    NSArray *escapedValues = nil;
+
+    if ((options & CMDQueryStringWritingOptionAddPercentEscapes) == CMDQueryStringWritingOptionAddPercentEscapes) {
+        escapedKey = [key CMDQueryStringSerialization_stringByAddingEscapes];
+        escapedValues = [self valueForKey:@"CMDQueryStringSerialization_stringByAddingEscapes"];
+    }
+    else {
+        escapedKey = key;
+        escapedValues = self;
+    }
+
     if ((options & CMDQueryStringWritingOptionArrayCommaSeparatedValues) == CMDQueryStringWritingOptionArrayCommaSeparatedValues) {
         return [NSString stringWithFormat:@"%@=%@", escapedKey, [escapedValues componentsJoinedByString:@","]];
     }

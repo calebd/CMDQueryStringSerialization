@@ -25,12 +25,17 @@
     if ([dictionary count] == 0) {
         return self;
     }
-    
+
+    CMDQueryStringWritingOptions options = (
+        CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets |
+        CMDQueryStringWritingOptionDateAsUnixTimestamp
+    );
+
     NSURLComponents *components = [NSURLComponents componentsWithURL:self resolvingAgainstBaseURL:YES];
     NSMutableDictionary *mutableParameters = [[NSMutableDictionary alloc] init];
     [mutableParameters addEntriesFromDictionary:[CMDQueryStringSerialization dictionaryWithQueryString:components.query]];
     [mutableParameters addEntriesFromDictionary:dictionary];
-    components.query = [CMDQueryStringSerialization queryStringWithDictionary:mutableParameters];
+    components.query = [CMDQueryStringSerialization queryStringWithDictionary:mutableParameters options:options];
     return components.URL;
 }
 

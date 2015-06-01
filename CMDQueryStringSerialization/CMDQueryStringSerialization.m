@@ -21,7 +21,8 @@
 + (NSString *)queryStringWithDictionary:(NSDictionary *)dictionary {
     CMDQueryStringWritingOptions options = (
         CMDQueryStringWritingOptionArrayRepeatKeysWithBrackets |
-        CMDQueryStringWritingOptionDateAsUnixTimestamp
+        CMDQueryStringWritingOptionDateAsUnixTimestamp |
+        CMDQueryStringWritingOptionAddPercentEscapes
     );
     return [self queryStringWithDictionary:dictionary options:options];
 }
