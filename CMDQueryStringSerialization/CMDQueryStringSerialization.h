@@ -6,7 +6,11 @@
 //  Copyright (c) 2014 Caleb Davenport. All rights reserved.
 //
 
-@import Foundation;
+#if defined(__has_feature) && __has_feature(modules)
+    @import Foundation;
+#else
+    #import <Foundation/Foundation.h>
+#endif
 #import <CMDQueryStringSerialization/CMDQueryStringWritingOptions.h>
 #import <CMDQueryStringSerialization/NSURL+CMDQueryStringSerialization.h>
 
