@@ -23,6 +23,20 @@
 		3BEA1D081AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CFE1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m */; };
 		3BEA1D0E1AFB43DE0006A6E8 /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */; };
 		3BEA1D101AFB43F50006A6E8 /* ISO8601.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3BFF27EF1B1EDBE1001E0555 /* CMDQueryStringSerialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */; };
+		3BFF27FE1B1EDC89001E0555 /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */; };
+		3BFF28001B1EDC9A001E0555 /* ISO8601.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3BFF28011B1EDCC5001E0555 /* CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF71AFB41370006A6E8 /* CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BFF28021B1EDCC5001E0555 /* CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CF81AFB41370006A6E8 /* CMDQueryStringSerialization.m */; };
+		3BFF28031B1EDCC5001E0555 /* CMDQueryStringWritingOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CFB1AFB41370006A6E8 /* CMDQueryStringWritingOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BFF28041B1EDCC5001E0555 /* CMDQueryStringReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF51AFB41370006A6E8 /* CMDQueryStringReader.h */; };
+		3BFF28051B1EDCC5001E0555 /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CF61AFB41370006A6E8 /* CMDQueryStringReader.m */; };
+		3BFF28061B1EDCC5001E0555 /* CMDQueryStringValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF91AFB41370006A6E8 /* CMDQueryStringValueTransformer.h */; };
+		3BFF28071B1EDCC5001E0555 /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CFA1AFB41370006A6E8 /* CMDQueryStringValueTransformer.m */; };
+		3BFF28081B1EDCC5001E0555 /* NSString+CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CFD1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.h */; };
+		3BFF28091B1EDCC5001E0555 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CFE1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m */; };
+		3BFF280A1B1EDCC5001E0555 /* NSURL+CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B65D3D41B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BFF280B1B1EDCC5001E0555 /* NSURL+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B65D3D51B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +46,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3BEA1CD81AFB40E40006A6E8;
 			remoteInfo = CMDQueryStringSerialization;
+		};
+		3BFF27F01B1EDBE1001E0555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BEA1CD01AFB40E40006A6E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BFF27E31B1EDBE0001E0555;
+			remoteInfo = "CMDQueryStringSerialization-OSX";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,6 +68,16 @@
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BFF27FF1B1EDC91001E0555 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3BFF28001B1EDC9A001E0555 /* ISO8601.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +86,7 @@
 		3B65D3D51B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
 		3BEA1CD91AFB40E40006A6E8 /* CMDQueryStringSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMDQueryStringSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEA1CDD1AFB40E40006A6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BEA1CE41AFB40E50006A6E8 /* CMDQueryStringSerializationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMDQueryStringSerializationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEA1CE41AFB40E50006A6E8 /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEA1CEA1AFB40E50006A6E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BEA1CEB1AFB40E50006A6E8 /* SerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerializationTests.m; sourceTree = "<group>"; };
 		3BEA1CF51AFB41370006A6E8 /* CMDQueryStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDQueryStringReader.h; sourceTree = "<group>"; };
@@ -68,6 +99,9 @@
 		3BEA1CFD1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CMDQueryStringSerialization.h"; sourceTree = "<group>"; };
 		3BEA1CFE1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
 		3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/iOS/ISO8601.framework; sourceTree = "<group>"; };
+		3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMDQueryStringSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFF27EE1B1EDBE0001E0555 /* OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/Mac/ISO8601.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +118,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BEA1CE51AFB40E50006A6E8 /* CMDQueryStringSerialization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BFF27E01B1EDBE0001E0555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFF27FE1B1EDC89001E0555 /* ISO8601.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BFF27EB1B1EDBE0001E0555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFF27EF1B1EDBE1001E0555 /* CMDQueryStringSerialization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				3BEA1CD91AFB40E40006A6E8 /* CMDQueryStringSerialization.framework */,
-				3BEA1CE41AFB40E50006A6E8 /* CMDQueryStringSerializationTests.xctest */,
+				3BEA1CE41AFB40E50006A6E8 /* iOS Tests.xctest */,
+				3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */,
+				3BFF27EE1B1EDBE0001E0555 /* OSX Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */,
+				3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,12 +215,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BFF27E11B1EDBE0001E0555 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFF28011B1EDCC5001E0555 /* CMDQueryStringSerialization.h in Headers */,
+				3BFF280A1B1EDCC5001E0555 /* NSURL+CMDQueryStringSerialization.h in Headers */,
+				3BFF28041B1EDCC5001E0555 /* CMDQueryStringReader.h in Headers */,
+				3BFF28081B1EDCC5001E0555 /* NSString+CMDQueryStringSerialization.h in Headers */,
+				3BFF28061B1EDCC5001E0555 /* CMDQueryStringValueTransformer.h in Headers */,
+				3BFF28031B1EDCC5001E0555 /* CMDQueryStringWritingOptions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3BEA1CD81AFB40E40006A6E8 /* CMDQueryStringSerialization */ = {
+		3BEA1CD81AFB40E40006A6E8 /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEA1CEF1AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "CMDQueryStringSerialization" */;
+			buildConfigurationList = 3BEA1CEF1AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
 				3BEA1CD41AFB40E40006A6E8 /* Sources */,
 				3BEA1CD51AFB40E40006A6E8 /* Frameworks */,
@@ -179,14 +245,14 @@
 			);
 			dependencies = (
 			);
-			name = CMDQueryStringSerialization;
+			name = iOS;
 			productName = CMDQueryStringSerialization;
 			productReference = 3BEA1CD91AFB40E40006A6E8 /* CMDQueryStringSerialization.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BEA1CE31AFB40E50006A6E8 /* CMDQueryStringSerializationTests */ = {
+		3BEA1CE31AFB40E50006A6E8 /* iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BEA1CF21AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "CMDQueryStringSerializationTests" */;
+			buildConfigurationList = 3BEA1CF21AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "iOS Tests" */;
 			buildPhases = (
 				3BEA1CE01AFB40E50006A6E8 /* Sources */,
 				3BEA1CE11AFB40E50006A6E8 /* Frameworks */,
@@ -197,9 +263,46 @@
 			dependencies = (
 				3BEA1CE71AFB40E50006A6E8 /* PBXTargetDependency */,
 			);
-			name = CMDQueryStringSerializationTests;
+			name = "iOS Tests";
 			productName = CMDQueryStringSerializationTests;
-			productReference = 3BEA1CE41AFB40E50006A6E8 /* CMDQueryStringSerializationTests.xctest */;
+			productReference = 3BEA1CE41AFB40E50006A6E8 /* iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BFF27E31B1EDBE0001E0555 /* OS X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BFF27F71B1EDBE1001E0555 /* Build configuration list for PBXNativeTarget "OS X" */;
+			buildPhases = (
+				3BFF27DF1B1EDBE0001E0555 /* Sources */,
+				3BFF27E01B1EDBE0001E0555 /* Frameworks */,
+				3BFF27E11B1EDBE0001E0555 /* Headers */,
+				3BFF27E21B1EDBE0001E0555 /* Resources */,
+				3BFF27FF1B1EDC91001E0555 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OS X";
+			productName = "CMDQueryStringSerialization-OSX";
+			productReference = 3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3BFF27ED1B1EDBE0001E0555 /* OS X Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BFF27FA1B1EDBE1001E0555 /* Build configuration list for PBXNativeTarget "OS X Tests" */;
+			buildPhases = (
+				3BFF27EA1B1EDBE0001E0555 /* Sources */,
+				3BFF27EB1B1EDBE0001E0555 /* Frameworks */,
+				3BFF27EC1B1EDBE0001E0555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BFF27F11B1EDBE1001E0555 /* PBXTargetDependency */,
+			);
+			name = "OS X Tests";
+			productName = "CMDQueryStringSerialization-OSXTests";
+			productReference = 3BFF27EE1B1EDBE0001E0555 /* OSX Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -217,6 +320,12 @@
 					3BEA1CE31AFB40E50006A6E8 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
+					3BFF27E31B1EDBE0001E0555 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					3BFF27ED1B1EDBE0001E0555 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 				};
 			};
 			buildConfigurationList = 3BEA1CD31AFB40E40006A6E8 /* Build configuration list for PBXProject "CMDQueryStringSerialization" */;
@@ -231,8 +340,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3BEA1CD81AFB40E40006A6E8 /* CMDQueryStringSerialization */,
-				3BEA1CE31AFB40E50006A6E8 /* CMDQueryStringSerializationTests */,
+				3BEA1CD81AFB40E40006A6E8 /* iOS */,
+				3BEA1CE31AFB40E50006A6E8 /* iOS Tests */,
+				3BFF27E31B1EDBE0001E0555 /* OS X */,
+				3BFF27ED1B1EDBE0001E0555 /* OS X Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +357,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3BEA1CE21AFB40E50006A6E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BFF27E21B1EDBE0001E0555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BFF27EC1B1EDBE0001E0555 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,13 +401,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BFF27DF1B1EDBE0001E0555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFF280B1B1EDCC5001E0555 /* NSURL+CMDQueryStringSerialization.m in Sources */,
+				3BFF28021B1EDCC5001E0555 /* CMDQueryStringSerialization.m in Sources */,
+				3BFF28071B1EDCC5001E0555 /* CMDQueryStringValueTransformer.m in Sources */,
+				3BFF28051B1EDCC5001E0555 /* CMDQueryStringReader.m in Sources */,
+				3BFF28091B1EDCC5001E0555 /* NSString+CMDQueryStringSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BFF27EA1B1EDBE0001E0555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		3BEA1CE71AFB40E50006A6E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3BEA1CD81AFB40E40006A6E8 /* CMDQueryStringSerialization */;
+			target = 3BEA1CD81AFB40E40006A6E8 /* iOS */;
 			targetProxy = 3BEA1CE61AFB40E50006A6E8 /* PBXContainerItemProxy */;
+		};
+		3BFF27F11B1EDBE1001E0555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BFF27E31B1EDBE0001E0555 /* OS X */;
+			targetProxy = 3BFF27F01B1EDBE1001E0555 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -304,7 +453,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -325,7 +473,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,7 +498,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -366,7 +512,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -390,7 +535,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CMDQueryStringSerialization;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -410,7 +555,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CMDQueryStringSerialization;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -447,6 +592,92 @@
 			};
 			name = Release;
 		};
+		3BFF27F81B1EDBE1001E0555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CMDQueryStringSerialization/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = CMDQueryStringSerialization;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3BFF27F91B1EDBE1001E0555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = CMDQueryStringSerialization/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = CMDQueryStringSerialization;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3BFF27FB1B1EDBE1001E0555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CMDQueryStringSerializationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3BFF27FC1B1EDBE1001E0555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CMDQueryStringSerializationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEA1CEF1AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "CMDQueryStringSerialization" */ = {
+		3BEA1CEF1AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEA1CF01AFB40E50006A6E8 /* Debug */,
@@ -468,11 +699,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BEA1CF21AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "CMDQueryStringSerializationTests" */ = {
+		3BEA1CF21AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BEA1CF31AFB40E50006A6E8 /* Debug */,
 				3BEA1CF41AFB40E50006A6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BFF27F71B1EDBE1001E0555 /* Build configuration list for PBXNativeTarget "OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BFF27F81B1EDBE1001E0555 /* Debug */,
+				3BFF27F91B1EDBE1001E0555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BFF27FA1B1EDBE1001E0555 /* Build configuration list for PBXNativeTarget "OS X Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BFF27FB1B1EDBE1001E0555 /* Debug */,
+				3BFF27FC1B1EDBE1001E0555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

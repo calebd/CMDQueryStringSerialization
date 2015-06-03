@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3BEA1CD81AFB40E40006A6E8"
                BuildableName = "CMDQueryStringSerialization.framework"
-               BlueprintName = "CMDQueryStringSerialization"
+               BlueprintName = "iOS"
                ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3BEA1CE31AFB40E50006A6E8"
-               BuildableName = "CMDQueryStringSerializationTests.xctest"
-               BlueprintName = "CMDQueryStringSerializationTests"
+               BuildableName = "iOS Tests.xctest"
+               BlueprintName = "iOS Tests"
                ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3BEA1CE31AFB40E50006A6E8"
-               BuildableName = "CMDQueryStringSerializationTests.xctest"
-               BlueprintName = "CMDQueryStringSerializationTests"
+               BuildableName = "iOS Tests.xctest"
+               BlueprintName = "iOS Tests"
                ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -58,7 +58,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BEA1CD81AFB40E40006A6E8"
             BuildableName = "CMDQueryStringSerialization.framework"
-            BlueprintName = "CMDQueryStringSerialization"
+            BlueprintName = "iOS"
             ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,7 +77,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BEA1CD81AFB40E40006A6E8"
             BuildableName = "CMDQueryStringSerialization.framework"
-            BlueprintName = "CMDQueryStringSerialization"
+            BlueprintName = "iOS"
             ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -95,7 +95,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BEA1CD81AFB40E40006A6E8"
             BuildableName = "CMDQueryStringSerialization.framework"
-            BlueprintName = "CMDQueryStringSerialization"
+            BlueprintName = "iOS"
             ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
