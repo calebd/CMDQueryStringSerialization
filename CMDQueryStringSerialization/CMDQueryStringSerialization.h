@@ -14,6 +14,12 @@
 #import <CMDQueryStringSerialization/CMDQueryStringWritingOptions.h>
 #import <CMDQueryStringSerialization/NSURL+CMDQueryStringSerialization.h>
 
+//! Project version number for Everest.
+FOUNDATION_EXPORT double CMDQueryStringSerializationVersionNumber;
+
+//! Project version string for GradientView.
+FOUNDATION_EXPORT const unsigned char CMDQueryStringSerializationVersionString[];
+
 /**
  Easily convert between query strings and dictionaries.
  */
