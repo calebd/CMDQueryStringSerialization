@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3634A0951B1CC25500B1C866 /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3634A0941B1CC25500B1C866 /* CategoryTests.m */; };
+		3B03D19D1B279D9F00EF57EC /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */; };
+		3B03D19E1B279DA300EF57EC /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */; };
+		3B03D1A01B279F6000EF57EC /* ISO8601.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B03D1A21B279F8100EF57EC /* ISO8601.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B03D1A31B279FAA00EF57EC /* SerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CEB1AFB40E50006A6E8 /* SerializationTests.m */; };
+		3B03D1A41B279FAA00EF57EC /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3634A0941B1CC25500B1C866 /* CategoryTests.m */; };
 		3B65D3D61B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B65D3D41B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B65D3D71B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B65D3D51B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m */; };
 		3BEA1CE51AFB40E50006A6E8 /* CMDQueryStringSerialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA1CD91AFB40E40006A6E8 /* CMDQueryStringSerialization.framework */; };
@@ -22,10 +28,8 @@
 		3BEA1D071AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CFD1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.h */; };
 		3BEA1D081AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CFE1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m */; };
 		3BEA1D0E1AFB43DE0006A6E8 /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */; };
-		3BEA1D101AFB43F50006A6E8 /* ISO8601.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BFF27EF1B1EDBE1001E0555 /* CMDQueryStringSerialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */; };
 		3BFF27FE1B1EDC89001E0555 /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */; };
-		3BFF28001B1EDC9A001E0555 /* ISO8601.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BFF28011B1EDCC5001E0555 /* CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF71AFB41370006A6E8 /* CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BFF28021B1EDCC5001E0555 /* CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CF81AFB41370006A6E8 /* CMDQueryStringSerialization.m */; };
 		3BFF28031B1EDCC5001E0555 /* CMDQueryStringWritingOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CFB1AFB41370006A6E8 /* CMDQueryStringWritingOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,24 +61,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3BEA1D0F1AFB43E90006A6E8 /* Copy Frameworks */ = {
+		3B03D19F1B279F5A00EF57EC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3BEA1D101AFB43F50006A6E8 /* ISO8601.framework in Copy Frameworks */,
+				3B03D1A01B279F6000EF57EC /* ISO8601.framework in CopyFiles */,
 			);
-			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BFF27FF1B1EDC91001E0555 /* CopyFiles */ = {
+		3B03D1A11B279F7F00EF57EC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3BFF28001B1EDC9A001E0555 /* ISO8601.framework in CopyFiles */,
+				3B03D1A21B279F8100EF57EC /* ISO8601.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +103,7 @@
 		3BEA1CFE1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CMDQueryStringSerialization.m"; sourceTree = "<group>"; };
 		3BEA1D0C1AFB43CC0006A6E8 /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/iOS/ISO8601.framework; sourceTree = "<group>"; };
 		3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMDQueryStringSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BFF27EE1B1EDBE0001E0555 /* OSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OSX Tests.xctest"; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFF27EE1B1EDBE0001E0555 /* OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFF27FD1B1EDC81001E0555 /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/Mac/ISO8601.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BEA1CE51AFB40E50006A6E8 /* CMDQueryStringSerialization.framework in Frameworks */,
+				3B03D19D1B279D9F00EF57EC /* ISO8601.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFF27EF1B1EDBE1001E0555 /* CMDQueryStringSerialization.framework in Frameworks */,
+				3B03D19E1B279DA300EF57EC /* ISO8601.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +161,7 @@
 				3BEA1CD91AFB40E40006A6E8 /* CMDQueryStringSerialization.framework */,
 				3BEA1CE41AFB40E50006A6E8 /* iOS Tests.xctest */,
 				3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */,
-				3BFF27EE1B1EDBE0001E0555 /* OSX Tests.xctest */,
+				3BFF27EE1B1EDBE0001E0555 /* OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,7 +244,6 @@
 				3BEA1CD51AFB40E40006A6E8 /* Frameworks */,
 				3BEA1CD61AFB40E40006A6E8 /* Headers */,
 				3BEA1CD71AFB40E40006A6E8 /* Resources */,
-				3BEA1D0F1AFB43E90006A6E8 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +261,7 @@
 				3BEA1CE01AFB40E50006A6E8 /* Sources */,
 				3BEA1CE11AFB40E50006A6E8 /* Frameworks */,
 				3BEA1CE21AFB40E50006A6E8 /* Resources */,
+				3B03D1A11B279F7F00EF57EC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -276,7 +281,6 @@
 				3BFF27E01B1EDBE0001E0555 /* Frameworks */,
 				3BFF27E11B1EDBE0001E0555 /* Headers */,
 				3BFF27E21B1EDBE0001E0555 /* Resources */,
-				3BFF27FF1B1EDC91001E0555 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -294,6 +298,7 @@
 				3BFF27EA1B1EDBE0001E0555 /* Sources */,
 				3BFF27EB1B1EDBE0001E0555 /* Frameworks */,
 				3BFF27EC1B1EDBE0001E0555 /* Resources */,
+				3B03D19F1B279F5A00EF57EC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -302,7 +307,7 @@
 			);
 			name = "OS X Tests";
 			productName = "CMDQueryStringSerialization-OSXTests";
-			productReference = 3BFF27EE1B1EDBE0001E0555 /* OSX Tests.xctest */;
+			productReference = 3BFF27EE1B1EDBE0001E0555 /* OS X Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -417,6 +422,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B03D1A31B279FAA00EF57EC /* SerializationTests.m in Sources */,
+				3B03D1A41B279FAA00EF57EC /* CategoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +660,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -673,6 +681,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = CMDQueryStringSerializationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
