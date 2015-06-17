@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3634A0951B1CC25500B1C866 /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3634A0941B1CC25500B1C866 /* CategoryTests.m */; };
+		368CD41C1B3235B50047923F /* CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF71AFB41370006A6E8 /* CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368CD41D1B3235B50047923F /* CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CF81AFB41370006A6E8 /* CMDQueryStringSerialization.m */; };
+		368CD41E1B3235B50047923F /* CMDQueryStringWritingOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CFB1AFB41370006A6E8 /* CMDQueryStringWritingOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368CD41F1B3235B50047923F /* CMDQueryStringReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF51AFB41370006A6E8 /* CMDQueryStringReader.h */; };
+		368CD4201B3235B50047923F /* CMDQueryStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CF61AFB41370006A6E8 /* CMDQueryStringReader.m */; };
+		368CD4211B3235B50047923F /* CMDQueryStringValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CF91AFB41370006A6E8 /* CMDQueryStringValueTransformer.h */; };
+		368CD4221B3235B50047923F /* CMDQueryStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CFA1AFB41370006A6E8 /* CMDQueryStringValueTransformer.m */; };
+		368CD4231B3235B50047923F /* NSString+CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BEA1CFD1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.h */; };
+		368CD4241B3235B50047923F /* NSString+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CFE1AFB41370006A6E8 /* NSString+CMDQueryStringSerialization.m */; };
+		368CD4251B3235B50047923F /* NSURL+CMDQueryStringSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B65D3D41B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		368CD4261B3235B50047923F /* NSURL+CMDQueryStringSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B65D3D51B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.m */; };
+		368CD4281B32364A0047923F /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368CD4271B32364A0047923F /* ISO8601.framework */; };
 		3B03D1A31B279FAA00EF57EC /* SerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA1CEB1AFB40E50006A6E8 /* SerializationTests.m */; };
 		3B03D1A41B279FAA00EF57EC /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3634A0941B1CC25500B1C866 /* CategoryTests.m */; };
 		3B43A8731B27B5FF00566A7E /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B43A8721B27B5FA00566A7E /* ISO8601.framework */; };
@@ -87,6 +99,8 @@
 
 /* Begin PBXFileReference section */
 		3634A0941B1CC25500B1C866 /* CategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
+		368CD4141B3235AF0047923F /* CMDQueryStringSerialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMDQueryStringSerialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		368CD4271B32364A0047923F /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/watchOS/ISO8601.framework; sourceTree = "<group>"; };
 		3B43A8721B27B5FA00566A7E /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/iOS/ISO8601.framework; sourceTree = "<group>"; };
 		3B43A8761B27B63500566A7E /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = Carthage/Build/Mac/ISO8601.framework; sourceTree = "<group>"; };
 		3B65D3D41B17DC3D006293B6 /* NSURL+CMDQueryStringSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+CMDQueryStringSerialization.h"; sourceTree = "<group>"; };
@@ -110,6 +124,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		368CD4101B3235AF0047923F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CD4281B32364A0047923F /* ISO8601.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEA1CD51AFB40E40006A6E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +186,7 @@
 				3BEA1CE41AFB40E50006A6E8 /* iOS Tests.xctest */,
 				3BFF27E41B1EDBE0001E0555 /* CMDQueryStringSerialization.framework */,
 				3BFF27EE1B1EDBE0001E0555 /* OS X Tests.xctest */,
+				368CD4141B3235AF0047923F /* CMDQueryStringSerialization.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +223,7 @@
 		3BEA1D0B1AFB43B40006A6E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				368CD4271B32364A0047923F /* ISO8601.framework */,
 				3B43A8721B27B5FA00566A7E /* ISO8601.framework */,
 				3B43A8761B27B63500566A7E /* ISO8601.framework */,
 			);
@@ -209,6 +233,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		368CD4111B3235AF0047923F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CD4231B3235B50047923F /* NSString+CMDQueryStringSerialization.h in Headers */,
+				368CD41F1B3235B50047923F /* CMDQueryStringReader.h in Headers */,
+				368CD41C1B3235B50047923F /* CMDQueryStringSerialization.h in Headers */,
+				368CD4251B3235B50047923F /* NSURL+CMDQueryStringSerialization.h in Headers */,
+				368CD41E1B3235B50047923F /* CMDQueryStringWritingOptions.h in Headers */,
+				368CD4211B3235B50047923F /* CMDQueryStringValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEA1CD61AFB40E40006A6E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +275,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		368CD4131B3235AF0047923F /* watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368CD41B1B3235AF0047923F /* Build configuration list for PBXNativeTarget "watchOS" */;
+			buildPhases = (
+				368CD40F1B3235AF0047923F /* Sources */,
+				368CD4101B3235AF0047923F /* Frameworks */,
+				368CD4111B3235AF0047923F /* Headers */,
+				368CD4121B3235AF0047923F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watchOS;
+			productName = watchOS;
+			productReference = 368CD4141B3235AF0047923F /* CMDQueryStringSerialization.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3BEA1CD81AFB40E40006A6E8 /* iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BEA1CEF1AFB40E50006A6E8 /* Build configuration list for PBXNativeTarget "iOS" */;
@@ -318,9 +373,12 @@
 		3BEA1CD01AFB40E40006A6E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Caleb Davenport";
 				TargetAttributes = {
+					368CD4131B3235AF0047923F = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					3BEA1CD81AFB40E40006A6E8 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
@@ -351,11 +409,19 @@
 				3BEA1CE31AFB40E50006A6E8 /* iOS Tests */,
 				3BFF27E31B1EDBE0001E0555 /* OS X */,
 				3BFF27ED1B1EDBE0001E0555 /* OS X Tests */,
+				368CD4131B3235AF0047923F /* watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		368CD4121B3235AF0047923F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEA1CD71AFB40E40006A6E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +453,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		368CD40F1B3235AF0047923F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368CD4261B3235B50047923F /* NSURL+CMDQueryStringSerialization.m in Sources */,
+				368CD41D1B3235B50047923F /* CMDQueryStringSerialization.m in Sources */,
+				368CD4221B3235B50047923F /* CMDQueryStringValueTransformer.m in Sources */,
+				368CD4201B3235B50047923F /* CMDQueryStringReader.m in Sources */,
+				368CD4241B3235B50047923F /* NSString+CMDQueryStringSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BEA1CD41AFB40E40006A6E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +523,55 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		368CD4191B3235AF0047923F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Carthage/Build/watchOS\"";
+				INFOPLIST_FILE = CMDQueryStringSerialization/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CMDQueryStringSerialization;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		368CD41A1B3235AF0047923F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Carthage/Build/watchOS\"";
+				INFOPLIST_FILE = CMDQueryStringSerialization/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = CMDQueryStringSerialization;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		3BEA1CED1AFB40E50006A6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -466,6 +593,7 @@
 				CURRENT_PROJECT_VERSION = 0.4.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -545,6 +673,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CMDQueryStringSerialization;
 				SKIP_INSTALL = YES;
 			};
@@ -566,6 +695,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CMDQueryStringSerialization;
 				SKIP_INSTALL = YES;
 			};
@@ -586,6 +716,7 @@
 				);
 				INFOPLIST_FILE = CMDQueryStringSerializationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -601,6 +732,7 @@
 				);
 				INFOPLIST_FILE = CMDQueryStringSerializationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -626,6 +758,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CMDQueryStringSerialization;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -648,6 +781,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = CMDQueryStringSerialization;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -671,6 +805,7 @@
 				INFOPLIST_FILE = CMDQueryStringSerializationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -688,6 +823,7 @@
 				INFOPLIST_FILE = CMDQueryStringSerializationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.calebd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -696,6 +832,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		368CD41B1B3235AF0047923F /* Build configuration list for PBXNativeTarget "watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368CD4191B3235AF0047923F /* Debug */,
+				368CD41A1B3235AF0047923F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3BEA1CD31AFB40E40006A6E8 /* Build configuration list for PBXProject "CMDQueryStringSerialization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

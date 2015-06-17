@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BFF27E31B1EDBE0001E0555"
-               BuildableName = "CMDQueryStringSerialization.framework"
-               BlueprintName = "OS X"
-               ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BFF27ED1B1EDBE0001E0555"
-               BuildableName = "OS X Tests.xctest"
-               BlueprintName = "OS X Tests"
+               BlueprintIdentifier = "368CD4131B3235AF0047923F"
+               BuildableName = "watchOS.framework"
+               BlueprintName = "watchOS"
                ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BFF27ED1B1EDBE0001E0555"
-               BuildableName = "OS X Tests.xctest"
-               BlueprintName = "OS X Tests"
-               ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BFF27E31B1EDBE0001E0555"
-            BuildableName = "CMDQueryStringSerialization.framework"
-            BlueprintName = "OS X"
-            ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -78,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BFF27E31B1EDBE0001E0555"
-            BuildableName = "CMDQueryStringSerialization.framework"
-            BlueprintName = "OS X"
+            BlueprintIdentifier = "368CD4131B3235AF0047923F"
+            BuildableName = "watchOS.framework"
+            BlueprintName = "watchOS"
             ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BFF27E31B1EDBE0001E0555"
-            BuildableName = "CMDQueryStringSerialization.framework"
-            BlueprintName = "OS X"
+            BlueprintIdentifier = "368CD4131B3235AF0047923F"
+            BuildableName = "watchOS.framework"
+            BlueprintName = "watchOS"
             ReferencedContainer = "container:CMDQueryStringSerialization.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
