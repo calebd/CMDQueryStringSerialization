@@ -29,7 +29,6 @@ FOUNDATION_EXPORT const unsigned char CMDQueryStringSerializationVersionString[]
  Read a query string into a dictionary.
  
  @param string Query string to be deserialized.
- @param options Serialization options.
  
  @return A dictionary.
  */
